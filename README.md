@@ -224,23 +224,14 @@ If you find any inaccuracies in the data, please report via:
 
 ## 🛠️ Processing Pipeline
 
-| Step | Script | ผลลัพธ์ |
-|------|--------|---------|
-| 1. Setup Elections | `setup-unofficial-elections.py` | สร้าง 2 election records ใน Reporter DB + Media DB |
-| 2. OCR | `ocr-ect-gemini.py` | 773 PDFs → structured JSON ด้วย Gemini Vision (~$23) |
-| 3. Validate & Match | `validate-and-match.py` | เทียบ vote sums, match UUID จาก DB เดิม |
-| 4. Fix Party List | manual edit 15 ไฟล์ | แก้ OCR errors ใน party list (phantom entries, digit misreads) |
-| 5. Fix Candidate Numbers | `fix-candidate-numbers.py` | แก้เลขผู้สมัครซ้ำ 45 ไฟล์ สส.เขต |
-| 6. Import | `import-unofficial-results.py` | Upsert 927 rows เข้า Media DB |
-
 ```
 776 PDF scans (กกต. — Canon copier, no text layer)
     │
     ▼
 ┌──────────────────┐     ┌──────────────────────┐
 │  Gemini Vision   │     │  ฐานข้อมูลอ้างอิง      │
-│  OCR + LLM       │     │  - Reporter DB        │
-│                  │     │  - อาสาสมัครวันเลือกตั้ง │
+│  OCR + LLM       │     │  - อาสาสมัครวันเลือกตั้ง │
+│                  │     │  - เว็บไม่เป็นทางการ กกต. │
 └────────┬─────────┘     └───────────┬──────────┘
          │                           │
          ▼                           │
@@ -263,8 +254,8 @@ If you find any inaccuracies in the data, please report via:
 ```
 
 1. **Source** — 776 PDF scans (แบบ สส.6/1) จาก กกต. สแกนจากเครื่อง Canon ไม่มี text layer ต้อง OCR ทั้งหมด
-2. **OCR** — Gemini Vision เป็นหลัก (~$23) + cross-validation กับ Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
-3. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs จาก Reporter DB
+2. **OCR** — Gemini Vision เป็นหลัก + cross-validation กับ Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
+3. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs, เทียบกับฐานข้อมูลอาสาสมัครวันเลือกตั้ง และเว็บไม่เป็นทางการของ กกต.
 4. **Fix OCR Errors** — แก้ party list 15 ไฟล์ (phantom entries, digit misreads) + แก้เลขผู้สมัครซ้ำ 45 ไฟล์ สส.เขต
 5. **Output** — JSON (raw 773 files + matched 773 files) และ CSV
 
