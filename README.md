@@ -60,7 +60,7 @@ For official and authoritative results, please always refer to the original docu
 ```
 data/
 ├── csv/                            # CSV รวม — เปิดได้ด้วย Excel / Google Sheets
-│   ├── constituency.csv            # ผลแบบแบ่งเขต ทุกผู้สมัคร (3,370 rows)
+│   ├── constituency.csv            # ผลแบบแบ่งเขต ทุกผู้สมัคร (3,372 rows)
 │   ├── party_list.csv              # ผลแบบบัญชีรายชื่อ ทุกพรรค (22,008 rows)
 │   └── summary_winners.csv        # สรุปผู้ชนะแบบแบ่งเขต (387 rows)
 ├── matched/                        # JSON ที่ผ่าน validation + matched กับฐานข้อมูลผู้สมัคร
@@ -101,7 +101,23 @@ data/
 
 ## 🔍 Quality Assurance / การตรวจสอบคุณภาพ
 
-### บัญชีรายชื่อ (Party List) — 15 เขตที่ vote sum ไม่ตรง
+### 1. แก้เลขหมายผู้สมัคร สส.เขต
+
+**ปัญหา:** Gemini อ่านเลขหมายผู้สมัครผิด/สลับ **616 จุด** ใน **194 เขต** (จาก 387 เขต)
+
+**วิธีแก้:** ใช้ `candidate_uuid` (ที่ match ด้วยชื่อถูกแล้ว) lookup เลขหมายที่ถูกต้องจากฐานข้อมูล
+
+**ผลลัพธ์:** ผู้สมัคร 3,372 คน ทั้ง 387 เขต — เลขหมายตรงกับฐานข้อมูล **100%**
+
+### 2. แก้เลขหมายพรรค บัญชีรายชื่อ
+
+**ปัญหา:** Gemini สร้าง phantom entries (พรรคเปล่า 0 คะแนน) ทำให้เลขหมายพรรคเลื่อน ผิด **3,184 จุด** ใน **94 เขต** (จาก 386 เขต)
+
+**วิธีแก้:** ใช้ `party_uuid` lookup เลขหมายพรรคที่ถูกต้องจาก `election_parties` ในฐานข้อมูล
+
+**ผลลัพธ์:** 57 พรรค × 386 เขต (21,973 entries) — เลขหมายตรงกับฐานข้อมูล **100%**
+
+### 3. แก้คะแนนบัญชีรายชื่อ — 15 เขตที่ vote sum ไม่ตรง
 
 แก้ไขทั้งหมดแล้ว → **0 mismatches**
 
@@ -113,12 +129,20 @@ data/
 
 > แก้โดยเทียบกับ PDF ต้นฉบับทีละเขต
 
-### สส.เขต (Constituency) — 45 เขตที่เลขผู้สมัครซ้ำ
+### 4. แก้เลขผู้สมัครซ้ำ สส.เขต — 45 เขต
 
 แก้ไขทั้งหมดแล้ว → **0 duplicates**
 
 - Gemini อ่านเลขหมายผู้สมัครผิด/สลับ/ซ้ำกัน
-- แก้โดย query ข้อมูลจริงจาก Reporter DB แล้ว match ด้วยชื่อพรรค
+- แก้โดย query ข้อมูลจริง 476 คนจาก Reporter DB แล้ว match ด้วยชื่อพรรค
+
+### ตัวเลขสรุป
+
+|  | สส.เขต | บัญชีรายชื่อ |
+|---|---|---|
+| **เลขหมายผิด** | 0 | 0 |
+| **Vote sum mismatch** | 0 | 0 |
+| **Duplicate candidates** | 0 | N/A |
 
 ### Remaining Known Issues
 
@@ -188,6 +212,8 @@ data/
 | 2026-02-21 (21 ก.พ. 69) | นำเข้าข้อมูล matched: สส.เขต 387/400, บัญชีรายชื่อ 386/400 |
 | 2026-02-21 (21 ก.พ. 69) | แก้ไข 15 OCR errors บัญชีรายชื่อ (phantom entries, missing parties, digit misreads) — vote sum mismatch = 0 |
 | 2026-02-21 (21 ก.พ. 69) | แก้ไขเลขผู้สมัครซ้ำ 45 เขต สส.เขต — duplicate candidates = 0 |
+| 2026-02-21 (21 ก.พ. 69) | แก้เลขหมายผู้สมัคร สส.เขต 616 จุด (194 เขต) — lookup จาก candidate_uuid → เลขหมายตรง 100% |
+| 2026-02-21 (21 ก.พ. 69) | แก้เลขหมายพรรค บัญชีรายชื่อ 3,184 จุด (94 เขต) — lookup จาก party_uuid → เลขหมายตรง 100% |
 
 > Timeline จะอัปเดตเมื่อ กกต. ประกาศผลเพิ่มเติม หรือเมื่อข้อมูลได้รับการแก้ไข
 
@@ -230,8 +256,8 @@ If you find any inaccuracies in the data, please report via:
     ▼
 ┌──────────────────┐     ┌──────────────────────┐
 │  Gemini Vision   │     │  ฐานข้อมูลอ้างอิง      │
-│  OCR + LLM       │     │  - อาสาสมัครวันเลือกตั้ง │
-│                  │     │  - เว็บไม่เป็นทางการ กกต. │
+│  OCR + LLM       │     │  - Reporter DB        │
+│                  │     │  - election_parties   │
 └────────┬─────────┘     └───────────┬──────────┘
          │                           │
          ▼                           │
@@ -239,14 +265,17 @@ If you find any inaccuracies in the data, please report via:
 │  Validate + Match │◄────────────────┘
 │  Vote sum check   │
 │  Candidate UUIDs  │
+│  Party UUIDs      │
 └────────┬─────────┘
          │
          ▼
-┌──────────────────┐
-│  Fix OCR Errors   │
-│  Party list (15)  │
-│  Candidate # (45) │
-└────────┬─────────┘
+┌──────────────────────────────────┐
+│  Fix OCR Errors                  │
+│  1. เลขหมายผู้สมัคร (616 จุด)     │
+│  2. เลขหมายพรรค (3,184 จุด)      │
+│  3. คะแนนบัญชีรายชื่อ (15 เขต)    │
+│  4. เลขผู้สมัครซ้ำ (45 เขต)       │
+└────────┬─────────────────────────┘
          │
          ▼
    JSON + CSV output
@@ -255,8 +284,8 @@ If you find any inaccuracies in the data, please report via:
 
 1. **Source** — 776 PDF scans (แบบ สส.6/1) จาก กกต. สแกนจากเครื่อง Canon ไม่มี text layer ต้อง OCR ทั้งหมด
 2. **OCR** — Gemini Vision เป็นหลัก + cross-validation กับ Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
-3. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs, เทียบกับฐานข้อมูลอาสาสมัครวันเลือกตั้ง และเว็บไม่เป็นทางการของ กกต.
-4. **Fix OCR Errors** — แก้ party list 15 ไฟล์ (phantom entries, digit misreads) + แก้เลขผู้สมัครซ้ำ 45 ไฟล์ สส.เขต
+3. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs, เทียบกับ Reporter DB และ election_parties
+4. **Fix OCR Errors** — แก้เลขหมายผู้สมัคร 616 จุด (194 เขต) + เลขหมายพรรค 3,184 จุด (94 เขต) + คะแนนบัญชีรายชื่อ 15 เขต + เลขผู้สมัครซ้ำ 45 เขต
 5. **Output** — JSON (raw 773 files + matched 773 files) และ CSV
 
 ## 📜 License

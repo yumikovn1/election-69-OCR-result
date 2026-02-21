@@ -18,13 +18,13 @@
   },
   "results": [
     {
-      "number": 4,
+      "number": 3,
       "name": "นายอัคร ทองใจสด",
       "party": "ภูมิใจไทย",
       "votes": 59008
     },
     {
-      "number": 3,
+      "number": 4,
       "name": "นายอัครพงษ์ สิทธิ",
       "party": "ประชาชน",
       "votes": 14303
@@ -79,7 +79,7 @@
   },
   "matched_candidates": [
     {
-      "number": 4,
+      "number": 3,
       "name": "นายอัคร ทองใจสด",
       "party": "ภูมิใจไทย",
       "votes": 59008,
@@ -87,7 +87,7 @@
       "is_active": true
     },
     {
-      "number": 3,
+      "number": 4,
       "name": "นายอัครพงษ์ สิทธิ",
       "party": "ประชาชน",
       "votes": 14303,

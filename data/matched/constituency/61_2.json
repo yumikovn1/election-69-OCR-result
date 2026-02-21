@@ -30,7 +30,7 @@
       "votes": 9062
     },
     {
-      "number": null,
+      "number": 1,
       "name": "นายอรรถพล โต๋วสัจจา",
       "party": "เพื่อไทย",
       "votes": 8033
@@ -83,7 +83,7 @@
       "is_active": true
     },
     {
-      "number": null,
+      "number": 1,
       "name": "นายอรรถพล โต๋วสัจจา",
       "party": "เพื่อไทย",
       "votes": 8033,

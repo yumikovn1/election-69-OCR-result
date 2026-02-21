@@ -18,27 +18,27 @@
   },
   "results": [
     {
-      "number": 1,
+      "number": 5,
       "party": "รวมใจไทย",
       "votes": 554
     },
     {
-      "number": 2,
+      "number": 1,
       "party": "ไทยทรัพย์ทวี",
       "votes": 953
     },
     {
-      "number": 3,
+      "number": 2,
       "party": "เพื่อชาติไทย",
       "votes": 5706
     },
     {
-      "number": 4,
+      "number": 3,
       "party": "ใหม่",
       "votes": 411
     },
     {
-      "number": 5,
+      "number": 4,
       "party": "มิติใหม่",
       "votes": 469
     },
@@ -78,22 +78,22 @@
       "votes": 906
     },
     {
-      "number": 13,
+      "number": 14,
       "party": "ท้องที่ไทย",
       "votes": 635
     },
     {
-      "number": 14,
+      "number": 15,
       "party": "อนาคตไทย",
       "votes": 64
     },
     {
-      "number": 15,
+      "number": 17,
       "party": "ไทยชนะ",
       "votes": 101
     },
     {
-      "number": 16,
+      "number": 18,
       "party": "พลังสังคมใหม่",
       "votes": 251
     },
@@ -103,7 +103,7 @@
       "votes": 105
     },
     {
-      "number": 18,
+      "number": 17,
       "party": "ไทยชนะ",
       "votes": 20
     },
@@ -198,17 +198,17 @@
       "votes": 0
     },
     {
-      "number": 37,
+      "number": 36,
       "party": "ไทยพร้อม",
       "votes": 99
     },
     {
-      "number": 38,
+      "number": 37,
       "party": "ภูมิใจไทย",
       "votes": 10042
     },
     {
-      "number": 39,
+      "number": 38,
       "party": "พลังธรรมใหม่",
       "votes": 325
     },
@@ -322,35 +322,35 @@
   },
   "matched_parties": [
     {
-      "number": 1,
+      "number": 5,
       "party": "รวมใจไทย",
       "votes": 554,
       "party_uuid": "e9f5dc95-0d5c-46bc-8e2c-be791faa2b27",
       "party_code": "5"
     },
     {
-      "number": 2,
+      "number": 1,
       "party": "ไทยทรัพย์ทวี",
       "votes": 953,
       "party_uuid": "aec0c4f2-be03-4a06-a205-b00971871173",
       "party_code": "1"
     },
     {
-      "number": 3,
+      "number": 2,
       "party": "เพื่อชาติไทย",
       "votes": 5706,
       "party_uuid": "0db115a9-bb11-4fc0-9008-4acee3614999",
       "party_code": "2"
     },
     {
-      "number": 4,
+      "number": 3,
       "party": "ใหม่",
       "votes": 411,
       "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
       "party_code": "3"
     },
     {
-      "number": 5,
+      "number": 4,
       "party": "มิติใหม่",
       "votes": 469,
       "party_uuid": "6102915f-e8bc-4149-8265-ec74489adf2f",
@@ -406,28 +406,28 @@
       "party_code": "12"
     },
     {
-      "number": 13,
+      "number": 14,
       "party": "ท้องที่ไทย",
       "votes": 635,
       "party_uuid": "c20d9515-8b33-46de-b650-824c571725a1",
       "party_code": "14"
     },
     {
-      "number": 14,
+      "number": 15,
       "party": "อนาคตไทย",
       "votes": 64,
       "party_uuid": "fc22ff6d-da02-4cb6-86a7-b768c78bc19a",
       "party_code": "15"
     },
     {
-      "number": 15,
+      "number": 17,
       "party": "ไทยชนะ",
       "votes": 101,
       "party_uuid": "409581ea-d469-40f6-803e-7830a6418150",
       "party_code": "17"
     },
     {
-      "number": 16,
+      "number": 18,
       "party": "พลังสังคมใหม่",
       "votes": 251,
       "party_uuid": "43053588-eac7-4f7a-9dcd-dba51eeceaed",
@@ -546,21 +546,21 @@
       "party_code": "35"
     },
     {
-      "number": 37,
+      "number": 36,
       "party": "ไทยพร้อม",
       "votes": 99,
       "party_uuid": "54c9efd2-2cd9-487a-91f7-1251aae30c2d",
       "party_code": "36"
     },
     {
-      "number": 38,
+      "number": 37,
       "party": "ภูมิใจไทย",
       "votes": 10042,
       "party_uuid": "013c219e-e197-416d-84ea-00ba9c35465e",
       "party_code": "37"
     },
     {
-      "number": 39,
+      "number": 38,
       "party": "พลังธรรมใหม่",
       "votes": 325,
       "party_uuid": "2b1669bf-b61b-40b2-96a4-b235fa1e1501",
@@ -700,7 +700,7 @@
       "party_code": "19"
     },
     {
-      "number": 17,
+      "number": 16,
       "party": "พลังเพื่อไทย",
       "votes": 105,
       "party_uuid": "bce2afcf-33ee-486e-a735-e6db4d3b930f",
