@@ -714,13 +714,5 @@
       "party_code": "56"
     }
   ],
-  "unmatched_parties": [
-    {
-      "number": 1,
-      "party": "พรรคที่ 1",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    }
-  ]
+  "unmatched_parties": []
 }

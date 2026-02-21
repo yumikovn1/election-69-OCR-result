@@ -305,7 +305,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/19. นครปฐม เขต 3.json",
   "_validation": {
-    "vote_sum": 82640,
+    "vote_sum": 82200,
     "good_votes": 82640,
     "sum_diff_pct": 0.53
   },
@@ -721,13 +721,5 @@
       "party_code": "57"
     }
   ],
-  "unmatched_parties": [
-    {
-      "number": 1,
-      "party": "",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    }
-  ]
+  "unmatched_parties": []
 }
