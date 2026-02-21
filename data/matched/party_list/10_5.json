@@ -6,7 +6,7 @@
     "1.1": 133983,
     "1.2": 96559,
     "2.1": 130040,
-    "2.2": 96561,
+    "2.2": 96559,
     "2.3": 33481,
     "3.1": 91001,
     "3.2": 89,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 92873,
     "good_votes": 92886,
-    "sum_diff_pct": 0.01
+    "sum_diff_pct": 0.0
   },
   "province_code": "10",
   "province_name_normalized": "กรุงเทพมหานคร",
@@ -316,7 +316,7 @@
     "voters_came": 96559,
     "ballots_received": 130040,
     "ballots_used": 96561,
-    "good_votes": 92873,
+    "good_votes": 92886,
     "invalid_votes": 1462,
     "no_votes": 2211
   },

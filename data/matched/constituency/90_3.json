@@ -13,7 +13,7 @@
     "3.3": 6937,
     "3.4": 105979,
     "4.1": 93176,
-    "4.2": 3394,
+    "4.2": 3395,
     "4.3": 9408
   },
   "results": [
@@ -68,7 +68,7 @@
     "ballots_received": 135875,
     "ballots_used": 105979,
     "good_votes": 93176,
-    "invalid_votes": 3394,
+    "invalid_votes": 3395,
     "no_votes": 9408
   },
   "matched_candidates": [

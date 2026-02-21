@@ -5,7 +5,7 @@
   "summary_by_section": {
     "1.1": 130076,
     "1.2": 87676,
-    "2.1": 128620,
+    "2.1": 124620,
     "2.2": 87676,
     "2.3": 40944,
     "3.1": 79793,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 83169,
     "good_votes": 83196,
-    "sum_diff_pct": 0.03
+    "sum_diff_pct": 0.0
   },
   "province_code": "44",
   "province_name_normalized": "มหาสารคาม",
@@ -316,7 +316,7 @@
     "voters_came": 87676,
     "ballots_received": 128620,
     "ballots_used": 87676,
-    "good_votes": 83169,
+    "good_votes": 83196,
     "invalid_votes": 3505,
     "no_votes": 975
   },

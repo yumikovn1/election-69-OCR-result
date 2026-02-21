@@ -3,7 +3,7 @@
   "constituency_number": 2,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 144226,
+    "1.1": 144266,
     "1.2": 118519,
     "2.1": 148260,
     "2.2": 118518,
@@ -307,16 +307,16 @@
   "_validation": {
     "vote_sum": 107899,
     "good_votes": 107806,
-    "sum_diff_pct": 0.09
+    "sum_diff_pct": 0.1
   },
   "province_code": "24",
   "province_name_normalized": "ฉะเชิงเทรา",
   "summary": {
-    "eligible_voters": 144226,
+    "eligible_voters": 144266,
     "voters_came": 118519,
     "ballots_received": 148260,
     "ballots_used": 118518,
-    "good_votes": 107899,
+    "good_votes": 107806,
     "invalid_votes": 6636,
     "no_votes": 4075
   },

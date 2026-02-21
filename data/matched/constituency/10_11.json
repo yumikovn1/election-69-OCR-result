@@ -117,7 +117,7 @@
       "number": 3,
       "name": "นายวรัญชัย โชคชนะ",
       "party": "ประชาธิปไตยใหม่",
-      "votes": 181
+      "votes": 180
     },
     {
       "number": 18,
@@ -128,7 +128,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/1. กรุงเทพมหานคร เขต 11.json",
   "_validation": {
-    "vote_sum": 94994,
+    "vote_sum": 94993,
     "good_votes": 94993,
     "sum_diff_pct": 0.0
   },
@@ -139,7 +139,7 @@
     "voters_came": 100367,
     "ballots_received": 139579,
     "ballots_used": 100367,
-    "good_votes": 94994,
+    "good_votes": 94993,
     "invalid_votes": 1207,
     "no_votes": 4167
   },
@@ -276,7 +276,7 @@
       "number": 3,
       "name": "นายวรัญชัย โชคชนะ",
       "party": "ประชาธิปไตยใหม่",
-      "votes": 181,
+      "votes": 180,
       "candidate_uuid": "c409fa0e-2f02-4645-8e2a-0ab555642c2b",
       "is_active": true
     },

@@ -21,7 +21,7 @@
       "number": 2,
       "name": "นายอามินทร์ มะยูโต๊ะ",
       "party": "กล้าธรรม",
-      "votes": 43544
+      "votes": 43594
     },
     {
       "number": 6,
@@ -68,9 +68,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/25. นราธิวาส เขต 2.json",
   "_validation": {
-    "vote_sum": 70585,
+    "vote_sum": 70635,
     "good_votes": 70635,
-    "sum_diff_pct": 0.07
+    "sum_diff_pct": 0.0
   },
   "province_code": "96",
   "province_name_normalized": "นราธิวาส",
@@ -79,7 +79,7 @@
     "voters_came": 77970,
     "ballots_received": 117760,
     "ballots_used": 77970,
-    "good_votes": 70585,
+    "good_votes": 70635,
     "invalid_votes": 3460,
     "no_votes": 3875
   },
@@ -88,7 +88,7 @@
       "number": 2,
       "name": "นายอามินทร์ มะยูโต๊ะ",
       "party": "กล้าธรรม",
-      "votes": 43544,
+      "votes": 43594,
       "candidate_uuid": "d98390f3-e8f4-42e6-9e7f-035e053e19ee",
       "is_active": true
     },

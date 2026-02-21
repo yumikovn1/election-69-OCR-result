@@ -7,7 +7,7 @@
     "1.2": 101442,
     "2.1": 146632,
     "2.2": 101439,
-    "2.3": 45191,
+    "2.3": 45193,
     "3.1": 95025,
     "3.2": 0,
     "3.3": 6144,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 91264,
     "good_votes": 91168,
-    "sum_diff_pct": 0.11
+    "sum_diff_pct": 0.1
   },
   "province_code": "62",
   "province_name_normalized": "กำแพงเพชร",
@@ -316,7 +316,7 @@
     "voters_came": 101442,
     "ballots_received": 146632,
     "ballots_used": 101439,
-    "good_votes": 91264,
+    "good_votes": 91168,
     "invalid_votes": 6367,
     "no_votes": 3907
   },

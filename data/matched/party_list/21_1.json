@@ -4,17 +4,17 @@
   "type": "party_list",
   "summary_by_section": {
     "1.1": 121750,
-    "1.2": 91421,
+    "1.2": 91411,
     "2.1": 124138,
-    "2.2": 91421,
-    "2.3": 32171,
+    "2.2": 91411,
+    "2.3": 32127,
     "3.1": 87708,
     "3.2": 0,
-    "3.3": 3713,
-    "3.4": 91421,
+    "3.3": 3703,
+    "3.4": 91411,
     "4.1": 86337,
     "4.2": 2322,
-    "4.3": 2762
+    "4.3": 2752
   },
   "results": [
     {
@@ -307,18 +307,18 @@
   "_validation": {
     "vote_sum": 86327,
     "good_votes": 86337,
-    "sum_diff_pct": 0.01
+    "sum_diff_pct": 0.0
   },
   "province_code": "21",
   "province_name_normalized": "ระยอง",
   "summary": {
     "eligible_voters": 121750,
-    "voters_came": 91421,
+    "voters_came": 91411,
     "ballots_received": 124138,
     "ballots_used": 91421,
-    "good_votes": 86327,
+    "good_votes": 86337,
     "invalid_votes": 2322,
-    "no_votes": 2762
+    "no_votes": 2752
   },
   "matched_parties": [
     {

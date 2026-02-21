@@ -3,7 +3,7 @@
   "constituency_number": 1,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 129363,
+    "1.1": 129303,
     "1.2": 94811,
     "2.1": 132748,
     "2.2": 94811,
@@ -12,9 +12,9 @@
     "3.2": 54,
     "3.3": 4334,
     "3.4": 94811,
-    "4.1": 84899,
+    "4.1": 84889,
     "4.2": 4566,
-    "4.3": 5346
+    "4.3": 5356
   },
   "results": [
     {
@@ -316,19 +316,19 @@
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/31. ปราจีนบุรี เขต 1.json",
   "_validation": {
     "vote_sum": 84900,
-    "good_votes": 84899,
+    "good_votes": 84889,
     "sum_diff_pct": 0.0
   },
   "province_code": "25",
   "province_name_normalized": "ปราจีนบุรี",
   "summary": {
-    "eligible_voters": 129363,
+    "eligible_voters": 129303,
     "voters_came": 94811,
     "ballots_received": 132748,
     "ballots_used": 94811,
-    "good_votes": 84900,
+    "good_votes": 84889,
     "invalid_votes": 4566,
-    "no_votes": 5346
+    "no_votes": 5356
   },
   "matched_parties": [
     {

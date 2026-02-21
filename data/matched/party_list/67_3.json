@@ -3,7 +3,7 @@
   "constituency_number": 3,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 126659,
+    "1.1": 166659,
     "1.2": 92278,
     "2.1": 123580,
     "2.2": 92278,
@@ -307,16 +307,16 @@
   "_validation": {
     "vote_sum": 83420,
     "good_votes": 83320,
-    "sum_diff_pct": 0.12
+    "sum_diff_pct": 0.1
   },
   "province_code": "67",
   "province_name_normalized": "เพชรบูรณ์",
   "summary": {
-    "eligible_voters": 126659,
+    "eligible_voters": 166659,
     "voters_came": 92278,
     "ballots_received": 123580,
     "ballots_used": 92278,
-    "good_votes": 83420,
+    "good_votes": 83320,
     "invalid_votes": 5865,
     "no_votes": 3093
   },

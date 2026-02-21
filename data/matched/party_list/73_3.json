@@ -40,7 +40,7 @@
     {
       "number": 4,
       "party": "มิติใหม่",
-      "votes": 53
+      "votes": 513
     },
     {
       "number": 5,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/19. นครปฐม เขต 3.json",
   "_validation": {
-    "vote_sum": 82200,
+    "vote_sum": 82640,
     "good_votes": 82640,
-    "sum_diff_pct": 0.53
+    "sum_diff_pct": 0.0
   },
   "province_code": "73",
   "province_name_normalized": "นครปฐม",
@@ -345,7 +345,7 @@
     {
       "number": 4,
       "party": "มิติใหม่",
-      "votes": 53,
+      "votes": 513,
       "party_uuid": "6102915f-e8bc-4149-8265-ec74489adf2f",
       "party_code": "4"
     },
@@ -716,7 +716,7 @@
     {
       "number": 57,
       "party": "พลังไทยรักชาติ",
-      "votes": 131,
+      "votes": 111,
       "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
       "party_code": "57"
     }

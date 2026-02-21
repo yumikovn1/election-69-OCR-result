@@ -5,7 +5,7 @@
   "summary_by_section": {
     "1.1": 111970,
     "1.2": 81871,
-    "2.1": 110020,
+    "2.1": 111020,
     "2.2": 81871,
     "2.3": 28149,
     "3.1": 78986,
@@ -316,7 +316,7 @@
     "voters_came": 81871,
     "ballots_received": 110020,
     "ballots_used": 81871,
-    "good_votes": 76687,
+    "good_votes": 76686,
     "invalid_votes": 2506,
     "no_votes": 2679
   },

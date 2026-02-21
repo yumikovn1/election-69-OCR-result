@@ -8,7 +8,7 @@
     "2.1": 137840,
     "2.2": 104185,
     "2.3": 33655,
-    "3.1": 99022,
+    "3.1": 89022,
     "3.2": 44,
     "3.3": 5119,
     "3.4": 104185,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 94928,
     "good_votes": 94978,
-    "sum_diff_pct": 0.05
+    "sum_diff_pct": 0.1
   },
   "province_code": "60",
   "province_name_normalized": "นครสวรรค์",
@@ -316,7 +316,7 @@
     "voters_came": 104185,
     "ballots_received": 137840,
     "ballots_used": 104185,
-    "good_votes": 94928,
+    "good_votes": 94978,
     "invalid_votes": 6300,
     "no_votes": 2907
   },

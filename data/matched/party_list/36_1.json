@@ -3,7 +3,7 @@
   "constituency_number": 1,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 129541,
+    "1.1": 169441,
     "1.2": 88777,
     "2.1": 131010,
     "2.2": 88777,
@@ -80,31 +80,21 @@
     {
       "number": 14,
       "party": "ท้องที่ไทย",
-      "votes": 635
+      "votes": 64
     },
     {
       "number": 15,
       "party": "อนาคตไทย",
-      "votes": 64
+      "votes": 101
     },
     {
       "number": 17,
       "party": "ไทยชนะ",
-      "votes": 101
+      "votes": 105
     },
     {
       "number": 18,
       "party": "พลังสังคมใหม่",
-      "votes": 251
-    },
-    {
-      "number": 17,
-      "party": "(พันตำรวจเอก เสกสรร บุญยรัชนิกร)",
-      "votes": 105
-    },
-    {
-      "number": 17,
-      "party": "ไทยชนะ",
       "votes": 20
     },
     {
@@ -191,11 +181,6 @@
       "number": 35,
       "party": "รักชาติ",
       "votes": 104
-    },
-    {
-      "number": 36,
-      "party": "",
-      "votes": 0
     },
     {
       "number": 36,
@@ -305,18 +290,18 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/11. ชัยภูมิ เขต 1.json",
   "_validation": {
-    "vote_sum": 81255,
+    "vote_sum": 80640,
     "good_votes": 81337,
-    "sum_diff_pct": 0.1
+    "sum_diff_pct": 0.9
   },
   "province_code": "36",
   "province_name_normalized": "ชัยภูมิ",
   "summary": {
-    "eligible_voters": 129541,
+    "eligible_voters": 169441,
     "voters_came": 88777,
     "ballots_received": 131010,
     "ballots_used": 88777,
-    "good_votes": 81275,
+    "good_votes": 81337,
     "invalid_votes": 4386,
     "no_votes": 3054
   },
@@ -408,28 +393,28 @@
     {
       "number": 14,
       "party": "ท้องที่ไทย",
-      "votes": 635,
+      "votes": 64,
       "party_uuid": "c20d9515-8b33-46de-b650-824c571725a1",
       "party_code": "14"
     },
     {
       "number": 15,
       "party": "อนาคตไทย",
-      "votes": 64,
+      "votes": 101,
       "party_uuid": "fc22ff6d-da02-4cb6-86a7-b768c78bc19a",
       "party_code": "15"
     },
     {
       "number": 17,
       "party": "ไทยชนะ",
-      "votes": 101,
+      "votes": 105,
       "party_uuid": "409581ea-d469-40f6-803e-7830a6418150",
       "party_code": "17"
     },
     {
       "number": 18,
       "party": "พลังสังคมใหม่",
-      "votes": 251,
+      "votes": 20,
       "party_uuid": "43053588-eac7-4f7a-9dcd-dba51eeceaed",
       "party_code": "18"
     },
@@ -702,7 +687,7 @@
     {
       "number": 16,
       "party": "พลังเพื่อไทย",
-      "votes": 105,
+      "votes": 251,
       "party_uuid": "bce2afcf-33ee-486e-a735-e6db4d3b930f",
       "party_code": "16"
     }

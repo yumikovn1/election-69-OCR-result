@@ -6,7 +6,7 @@
     "1.1": 125704,
     "1.2": 93879,
     "2.1": 124100,
-    "2.2": 93879,
+    "2.2": 93880,
     "2.3": 30220,
     "3.1": 88392,
     "3.2": 165,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 82344,
     "good_votes": 86344,
-    "sum_diff_pct": 4.63
+    "sum_diff_pct": 4.6
   },
   "province_code": "42",
   "province_name_normalized": "เลย",
@@ -316,7 +316,7 @@
     "voters_came": 93879,
     "ballots_received": 124100,
     "ballots_used": 93879,
-    "good_votes": 82344,
+    "good_votes": 86344,
     "invalid_votes": 4372,
     "no_votes": 3164
   },

@@ -5,7 +5,7 @@
   "summary_by_section": {
     "1.1": 143882,
     "1.2": 110523,
-    "2.1": 144726,
+    "2.1": 144326,
     "2.2": 110523,
     "2.3": 34203,
     "3.1": 107717,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 98075,
     "good_votes": 98080,
-    "sum_diff_pct": 0.01
+    "sum_diff_pct": 0.0
   },
   "province_code": "70",
   "province_name_normalized": "ราชบุรี",
@@ -316,7 +316,7 @@
     "voters_came": 110523,
     "ballots_received": 144726,
     "ballots_used": 110523,
-    "good_votes": 98075,
+    "good_votes": 98080,
     "invalid_votes": 6503,
     "no_votes": 5940
   },

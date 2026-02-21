@@ -3,7 +3,7 @@
   "constituency_number": 1,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 116489,
+    "1.1": 116889,
     "1.2": 88455,
     "2.1": 119998,
     "2.2": 88455,
@@ -312,11 +312,11 @@
   "province_code": "91",
   "province_name_normalized": "สตูล",
   "summary": {
-    "eligible_voters": 116489,
+    "eligible_voters": 116889,
     "voters_came": 88455,
     "ballots_received": 119998,
     "ballots_used": 88455,
-    "good_votes": 81812,
+    "good_votes": 81811,
     "invalid_votes": 3570,
     "no_votes": 3074
   },

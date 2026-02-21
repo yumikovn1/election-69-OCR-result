@@ -21,7 +21,7 @@
       "number": 7,
       "name": "นายอนุสรณ์ แก้ววิเชียร",
       "party": "ประชาชน",
-      "votes": 47505
+      "votes": 47405
     },
     {
       "number": 2,
@@ -86,9 +86,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/24. นนทบุรี เขต 3.json",
   "_validation": {
-    "vote_sum": 96621,
+    "vote_sum": 96521,
     "good_votes": 96521,
-    "sum_diff_pct": 0.1
+    "sum_diff_pct": 0.0
   },
   "province_code": "12",
   "province_name_normalized": "นนทบุรี",
@@ -97,7 +97,7 @@
     "voters_came": 106780,
     "ballots_received": 143619,
     "ballots_used": 106780,
-    "good_votes": 96621,
+    "good_votes": 96521,
     "invalid_votes": 2416,
     "no_votes": 7843
   },
@@ -106,7 +106,7 @@
       "number": 7,
       "name": "นายอนุสรณ์ แก้ววิเชียร",
       "party": "ประชาชน",
-      "votes": 47505,
+      "votes": 47405,
       "candidate_uuid": "bc52c96c-3aff-4ce2-a642-51de39fa5072",
       "is_active": true
     },

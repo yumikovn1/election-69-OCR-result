@@ -4,7 +4,7 @@
   "type": "party_list",
   "summary_by_section": {
     "1.1": 119751,
-    "1.2": 0,
+    "1.2": 89545,
     "2.1": 123571,
     "2.2": 89545,
     "2.3": 34026,
@@ -307,16 +307,16 @@
   "_validation": {
     "vote_sum": 81152,
     "good_votes": 81284,
-    "sum_diff_pct": 0.16
+    "sum_diff_pct": 0.2
   },
   "province_code": "55",
   "province_name_normalized": "น่าน",
   "summary": {
     "eligible_voters": 119751,
-    "voters_came": 0,
+    "voters_came": 89545,
     "ballots_received": 123571,
     "ballots_used": 89545,
-    "good_votes": 81152,
+    "good_votes": 81284,
     "invalid_votes": 4915,
     "no_votes": 3346
   },

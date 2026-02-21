@@ -312,7 +312,7 @@
   "province_code": "90",
   "province_name_normalized": "สงขลา",
   "summary": {
-    "eligible_voters": 155747,
+    "eligible_voters": 115747,
     "voters_came": 93834,
     "ballots_received": 112350,
     "ballots_used": 93834,

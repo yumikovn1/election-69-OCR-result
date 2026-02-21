@@ -4,7 +4,7 @@
   "type": "party_list",
   "summary_by_section": {
     "1.1": 129478,
-    "1.2": 84724,
+    "1.2": 94724,
     "2.1": 130998,
     "2.2": 94724,
     "2.3": 36274,
@@ -313,7 +313,7 @@
   "province_name_normalized": "ระยอง",
   "summary": {
     "eligible_voters": 129478,
-    "voters_came": 84724,
+    "voters_came": 94724,
     "ballots_received": 130998,
     "ballots_used": 94724,
     "good_votes": 88350,

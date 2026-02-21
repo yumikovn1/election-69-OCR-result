@@ -12,7 +12,7 @@
     "3.2": 0,
     "3.3": 4252,
     "3.4": 80892,
-    "4.1": 77505,
+    "4.1": 77405,
     "4.2": 2375,
     "4.3": 1112
   },
@@ -75,8 +75,8 @@
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/74. อุดรธานี เขต 6.json",
   "_validation": {
     "vote_sum": 77405,
-    "good_votes": 77505,
-    "sum_diff_pct": 0.13
+    "good_votes": 77405,
+    "sum_diff_pct": 0.0
   },
   "province_code": "41",
   "province_name_normalized": "อุดรธานี",

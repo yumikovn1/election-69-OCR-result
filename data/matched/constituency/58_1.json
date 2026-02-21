@@ -27,7 +27,7 @@
       "number": 5,
       "name": "นายอนัส มณีพฤกษ์",
       "party": "ประชาชน",
-      "votes": 14680
+      "votes": 18680
     },
     {
       "number": 3,
@@ -50,9 +50,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/45. แม่ฮ่องสอน เขต 1.json",
   "_validation": {
-    "vote_sum": 57134,
+    "vote_sum": 61134,
     "good_votes": 61134,
-    "sum_diff_pct": 6.54
+    "sum_diff_pct": 0.0
   },
   "province_code": "58",
   "province_name_normalized": "แม่ฮ่องสอน",
@@ -61,7 +61,7 @@
     "voters_came": 68159,
     "ballots_received": 92602,
     "ballots_used": 68159,
-    "good_votes": 57134,
+    "good_votes": 61134,
     "invalid_votes": 3932,
     "no_votes": 3093
   },
@@ -78,7 +78,7 @@
       "number": 5,
       "name": "นายอนัส มณีพฤกษ์",
       "party": "ประชาชน",
-      "votes": 14680,
+      "votes": 18680,
       "candidate_uuid": "3934b216-5b86-4123-9084-2a3035a1a825",
       "is_active": true
     },
