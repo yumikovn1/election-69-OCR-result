@@ -32,6 +32,7 @@ For official and authoritative results, please always refer to the original docu
 |---|---|---|
 | **เขตที่นำเข้าแล้ว** | 387 / 400 (96.8%) | 386 / 400 (96.5%) |
 | **Vote sum mismatches** | 0 | 0 |
+| **Duplicate candidates** | 0 | N/A |
 | **Data consistency** | ✓ (area = province = national) | ✓ (area = province = national) |
 
 ### ตัวเลขสำคัญ — Final Result
@@ -59,8 +60,8 @@ For official and authoritative results, please always refer to the original docu
 ```
 data/
 ├── csv/                            # CSV รวม — เปิดได้ด้วย Excel / Google Sheets
-│   ├── constituency.csv            # ผลแบบแบ่งเขต ทุกผู้สมัคร (3,380 rows)
-│   ├── party_list.csv              # ผลแบบบัญชีรายชื่อ ทุกพรรค (22,006 rows)
+│   ├── constituency.csv            # ผลแบบแบ่งเขต ทุกผู้สมัคร (3,370 rows)
+│   ├── party_list.csv              # ผลแบบบัญชีรายชื่อ ทุกพรรค (22,008 rows)
 │   └── summary_winners.csv        # สรุปผู้ชนะแบบแบ่งเขต (387 rows)
 ├── matched/                        # JSON ที่ผ่าน validation + matched กับฐานข้อมูลผู้สมัคร
 │   ├── constituency/               # แบบแบ่งเขต (387 files)
@@ -76,9 +77,9 @@ data/
 
 | ไฟล์ | คำอธิบาย | คอลัมน์ |
 |------|----------|---------|
-| `constituency.csv` | ผลคะแนนแบบแบ่งเขต ทุกผู้สมัคร | จังหวัด, เขต, หมายเลข, ชื่อผู้สมัคร, พรรค, คะแนน |
-| `party_list.csv` | ผลคะแนนแบบบัญชีรายชื่อ ทุกพรรค | จังหวัด, เขต, หมายเลข, พรรค, คะแนน |
-| `summary_winners.csv` | สรุปผู้ชนะแบบแบ่งเขต | จังหวัด, เขต, ผู้ชนะ, พรรค, คะแนน, คะแนนรวมทั้งเขต |
+| `constituency.csv` | ผลคะแนนแบบแบ่งเขต ทุกผู้สมัคร | รหัสจังหวัด, จังหวัด, เขต, หมายเลข, ชื่อผู้สมัคร, พรรค, คะแนน |
+| `party_list.csv` | ผลคะแนนแบบบัญชีรายชื่อ ทุกพรรค | รหัสจังหวัด, จังหวัด, เขต, หมายเลข, พรรค, คะแนน |
+| `summary_winners.csv` | สรุปผู้ชนะแบบแบ่งเขต | รหัสจังหวัด, จังหวัด, เขต, ผู้ชนะ, พรรค, คะแนน, คะแนนดี, ผู้มีสิทธิ, มาใช้สิทธิ |
 
 ### Matched JSON (แนะนำสำหรับนักพัฒนา)
 
@@ -100,20 +101,29 @@ data/
 
 ## 🔍 Quality Assurance / การตรวจสอบคุณภาพ
 
-พบ **15 party list vote sum mismatches** จาก OCR errors — แก้ไขทั้งหมดแล้ว:
+### บัญชีรายชื่อ (Party List) — 15 เขตที่ vote sum ไม่ตรง
+
+แก้ไขทั้งหมดแล้ว → **0 mismatches**
 
 | ประเภทปัญหา | จำนวน | ตัวอย่าง |
 |-------------|-------|----------|
-| Phantom/hallucinated entries | 10 areas | OCR สร้าง "Unknown Party" แทนพรรคจริง |
-| Missing parties | 7 areas | พรรคตกหล่น เช่น ใหม่, รวมใจไทย, ไทยทรัพย์ทวี |
-| Digit misreads | 3 areas | ๖→๕, ๐↔๒ transposition, ๓๖,๐๓๒→๓๐,๖๓๒ |
+| Phantom/hallucinated entries | 10 areas | Gemini แทรก "Unknown Party" เปล่าๆ ดันพรรคจริงหลุด |
+| Missing parties | 7 areas | พรรคหายไปเพราะ phantom เข้ามาแทนที่ เช่น ใหม่, รวมใจไทย, ไทยทรัพย์ทวี |
+| Thai numeral misreads | 3 areas | ๖→๕, ๐↔๒ transposition, ๘→๔ |
 
-> ทุก case แก้โดยเทียบกับ PDF ต้นฉบับ ใช้ Thai text ในวงเล็บเป็น authoritative source
+> แก้โดยเทียบกับ PDF ต้นฉบับทีละเขต
+
+### สส.เขต (Constituency) — 45 เขตที่เลขผู้สมัครซ้ำ
+
+แก้ไขทั้งหมดแล้ว → **0 duplicates**
+
+- Gemini อ่านเลขหมายผู้สมัครผิด/สลับ/ซ้ำกัน
+- แก้โดย query ข้อมูลจริงจาก Reporter DB แล้ว match ด้วยชื่อพรรค
 
 ### Remaining Known Issues
 
 - **35 unmatched party entries** — phantom/blank entries (0 votes) ไม่กระทบตัวเลขรวม
-- **2 unmatched candidates** — ถูกถอนชื่อ/ชื่อไม่ตรง (0–503 votes)
+- **2 unmatched candidates** — ถูกถอนชื่อ/ชื่อไม่ตรง DB
 
 ---
 
@@ -176,7 +186,8 @@ data/
 | 2026-02-20 (20 ก.พ. 69) | กกต. ประกาศผลการนับคะแนนอย่างเป็นทางการ 100% เป็น PDF (776 ไฟล์) ยกเว้น 3 เขต |
 | 2026-02-20 (20 ก.พ. 69) | เริ่มประมวลผล OCR จาก 776 PDF scans |
 | 2026-02-21 (21 ก.พ. 69) | นำเข้าข้อมูล matched: สส.เขต 387/400, บัญชีรายชื่อ 386/400 |
-| 2026-02-21 (21 ก.พ. 69) | แก้ไข 15 OCR errors (phantom entries, missing parties, digit misreads) — vote sum mismatch = 0 |
+| 2026-02-21 (21 ก.พ. 69) | แก้ไข 15 OCR errors บัญชีรายชื่อ (phantom entries, missing parties, digit misreads) — vote sum mismatch = 0 |
+| 2026-02-21 (21 ก.พ. 69) | แก้ไขเลขผู้สมัครซ้ำ 45 เขต สส.เขต — duplicate candidates = 0 |
 
 > Timeline จะอัปเดตเมื่อ กกต. ประกาศผลเพิ่มเติม หรือเมื่อข้อมูลได้รับการแก้ไข
 
@@ -213,27 +224,37 @@ If you find any inaccuracies in the data, please report via:
 
 ## 🛠️ Processing Pipeline
 
+| Step | Script | ผลลัพธ์ |
+|------|--------|---------|
+| 1. Setup Elections | `setup-unofficial-elections.py` | สร้าง 2 election records ใน Reporter DB + Media DB |
+| 2. OCR | `ocr-ect-gemini.py` | 773 PDFs → structured JSON ด้วย Gemini Vision (~$23) |
+| 3. Validate & Match | `validate-and-match.py` | เทียบ vote sums, match UUID จาก DB เดิม |
+| 4. Fix Party List | manual edit 15 ไฟล์ | แก้ OCR errors ใน party list (phantom entries, digit misreads) |
+| 5. Fix Candidate Numbers | `fix-candidate-numbers.py` | แก้เลขผู้สมัครซ้ำ 45 ไฟล์ สส.เขต |
+| 6. Import | `import-unofficial-results.py` | Upsert 927 rows เข้า Media DB |
+
 ```
 776 PDF scans (กกต. — Canon copier, no text layer)
     │
     ▼
 ┌──────────────────┐     ┌──────────────────────┐
 │  Gemini Vision   │     │  ฐานข้อมูลอ้างอิง      │
-│  OCR + LLM       │     │  - อาสาสมัครวันเลือกตั้ง │
-│  (หลายระบบ)       │     │  - เว็บไม่เป็นทางการ กกต. │
+│  OCR + LLM       │     │  - Reporter DB        │
+│                  │     │  - อาสาสมัครวันเลือกตั้ง │
 └────────┬─────────┘     └───────────┬──────────┘
          │                           │
          ▼                           │
 ┌──────────────────┐                 │
-│  Cross-validation │                 │
-│  ระหว่าง OCR/LLM  │◄────────────────┘
+│  Validate + Match │◄────────────────┘
+│  Vote sum check   │
+│  Candidate UUIDs  │
 └────────┬─────────┘
          │
          ▼
 ┌──────────────────┐
-│  Validate + Match │
-│  Candidate UUIDs  │
-│  Vote sum check   │
+│  Fix OCR Errors   │
+│  Party list (15)  │
+│  Candidate # (45) │
 └────────┬─────────┘
          │
          ▼
@@ -242,9 +263,9 @@ If you find any inaccuracies in the data, please report via:
 ```
 
 1. **Source** — 776 PDF scans (แบบ สส.6/1) จาก กกต. สแกนจากเครื่อง Canon ไม่มี text layer ต้อง OCR ทั้งหมด
-2. **OCR + LLM** — Gemini Vision เป็นหลัก + Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
-3. **Cross-validation** — เปรียบเทียบผลข้ามระบบ OCR/LLM + เทียบกับฐานข้อมูลอาสาสมัครวันเลือกตั้ง และเว็บไม่เป็นทางการของ กกต.
-4. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs จาก DB, แก้ไข OCR errors
+2. **OCR** — Gemini Vision เป็นหลัก (~$23) + cross-validation กับ Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
+3. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs จาก Reporter DB
+4. **Fix OCR Errors** — แก้ party list 15 ไฟล์ (phantom entries, digit misreads) + แก้เลขผู้สมัครซ้ำ 45 ไฟล์ สส.เขต
 5. **Output** — JSON (raw 773 files + matched 773 files) และ CSV
 
 ## 📜 License
