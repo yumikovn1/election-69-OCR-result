@@ -3,152 +3,123 @@
   "constituency_number": 5,
   "type": "constituency",
   "summary_by_section": {
-    "1.1": 126682,
-    "1.2": 85892,
-    "2.1": 128724,
-    "2.2": 85892,
-    "2.3": 42832,
-    "3.1": 79288,
-    "3.2": 12,
-    "3.3": 6592,
-    "3.4": 85892,
-    "4.1": 76481,
-    "4.2": 5544,
-    "4.3": 3867
+    "1.1": 132028,
+    "1.2": 99604,
+    "2.1": 135889,
+    "2.2": 99604,
+    "2.3": 36285,
+    "3.1": 92235,
+    "3.2": 0,
+    "3.3": 7369,
+    "3.4": 99604,
+    "4.1": 91365,
+    "4.2": 4742,
+    "4.3": 3497
   },
   "results": [
     {
-      "number": 7,
-      "name": "นางมลธิชา ไชยบาล",
-      "party": "กล้าธรรม",
-      "votes": 28526
-    },
-    {
-      "number": 1,
-      "name": "นางจุฬาลักษณ์ ขันสุธรรม",
-      "party": "ประชาชน",
-      "votes": 24836
-    },
-    {
-      "number": 4,
-      "name": "นายชัยยนต์ ศรีสมุทร",
-      "party": "เพื่อไทย",
-      "votes": 19203
-    },
-    {
-      "number": 6,
-      "name": "นายกฤษฎ์ชัยณัช วงศ์สมพฤกษ์",
-      "party": "ประชาธิปัตย์",
-      "votes": 1400
-    },
-    {
       "number": 2,
-      "name": "นายธวัชชัย อภิวงค์",
-      "party": "รวมไทยสร้างชาติ",
-      "votes": 1277
+      "name": "นายรังสรรค์ วันไชยธนวงศ์",
+      "party": "ภูมิใจไทย",
+      "votes": 53198
     },
     {
       "number": 3,
-      "name": "นายอนันต์ แพทยานนท์",
-      "party": "พลังประชารัฐ",
-      "votes": 509
+      "name": "นายนาวิน วังแปง",
+      "party": "ประชาชน",
+      "votes": 17505
+    },
+    {
+      "number": 1,
+      "name": "นายเทอดชาติ ชัยพงษ์",
+      "party": "เพื่อไทย",
+      "votes": 17204
+    },
+    {
+      "number": 4,
+      "name": "นายพันธวัช ภูผาพันธกานต์",
+      "party": "พลวัต",
+      "votes": 2383
+    },
+    {
+      "number": 6,
+      "name": "นายสุรชาติ ผิวแดง",
+      "party": "ประชาธิปัตย์",
+      "votes": 699
     },
     {
       "number": 5,
-      "name": "นายบัณฑิต สุรินเปา",
-      "party": "ไทยก้าวหน้า",
-      "votes": 429
-    },
-    {
-      "number": 8,
-      "name": "นางภัทรวัลย์ ผลไพบูลย์",
-      "party": "พลวัต",
-      "votes": 301
+      "name": "นายนิกร จันทร์หอม",
+      "party": "รวมไทยสร้างชาติ",
+      "votes": 476
     }
   ],
-  "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/13. เชียงราย เขต 6.json",
+  "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/constituency/13. เชียงราย เขต 5.json",
   "_validation": {
-    "vote_sum": 76481,
-    "good_votes": 76481,
-    "sum_diff_pct": 0.0
+    "vote_sum": 91465,
+    "good_votes": 91365,
+    "sum_diff_pct": 0.11
   },
   "province_code": "57",
   "province_name_normalized": "เชียงราย",
   "summary": {
-    "eligible_voters": 126682,
-    "voters_came": 85892,
-    "ballots_received": 128724,
-    "ballots_used": 85892,
-    "good_votes": 76481,
-    "invalid_votes": 5544,
-    "no_votes": 3867
+    "eligible_voters": 132028,
+    "voters_came": 99604,
+    "ballots_received": 135889,
+    "ballots_used": 99604,
+    "good_votes": 91365,
+    "invalid_votes": 4742,
+    "no_votes": 3497
   },
   "matched_candidates": [
     {
-      "number": 1,
-      "name": "นางจุฬาลักษณ์ ขันสุธรรม",
-      "party": "ประชาชน",
-      "votes": 24836,
-      "candidate_uuid": "48b44355-146d-414c-8468-d8ae667b30ba",
-      "is_active": true
-    },
-    {
-      "number": 4,
-      "name": "นายชัยยนต์ ศรีสมุทร",
-      "party": "เพื่อไทย",
-      "votes": 19203,
-      "candidate_uuid": "e5073d1d-0888-451d-83ff-5eb4f4681dc6",
-      "is_active": true
-    },
-    {
-      "number": 6,
-      "name": "นายกฤษฎ์ชัยณัช วงศ์สมพฤกษ์",
-      "party": "ประชาธิปัตย์",
-      "votes": 1400,
-      "candidate_uuid": "8b53c626-fc65-431b-9361-33e853bc0f32",
-      "is_active": true
-    },
-    {
       "number": 2,
-      "name": "นายธวัชชัย อภิวงค์",
-      "party": "รวมไทยสร้างชาติ",
-      "votes": 1277,
+      "name": "นายรังสรรค์ วันไชยธนวงศ์",
+      "party": "ภูมิใจไทย",
+      "votes": 53198,
       "candidate_uuid": "26373e63-caea-4032-bf4a-59571d870acd",
       "is_active": true
     },
     {
       "number": 3,
-      "name": "นายอนันต์ แพทยานนท์",
-      "party": "พลังประชารัฐ",
-      "votes": 509,
+      "name": "นายนาวิน วังแปง",
+      "party": "ประชาชน",
+      "votes": 17505,
       "candidate_uuid": "5b735616-484c-45a6-a5bd-3bc88232f29b",
       "is_active": true
     },
     {
+      "number": 1,
+      "name": "นายเทอดชาติ ชัยพงษ์",
+      "party": "เพื่อไทย",
+      "votes": 17204,
+      "candidate_uuid": "48b44355-146d-414c-8468-d8ae667b30ba",
+      "is_active": true
+    },
+    {
+      "number": 4,
+      "name": "นายพันธวัช ภูผาพันธกานต์",
+      "party": "พลวัต",
+      "votes": 2383,
+      "candidate_uuid": "e5073d1d-0888-451d-83ff-5eb4f4681dc6",
+      "is_active": true
+    },
+    {
+      "number": 6,
+      "name": "นายสุรชาติ ผิวแดง",
+      "party": "ประชาธิปัตย์",
+      "votes": 699,
+      "candidate_uuid": "8b53c626-fc65-431b-9361-33e853bc0f32",
+      "is_active": true
+    },
+    {
       "number": 5,
-      "name": "นายบัณฑิต สุรินเปา",
-      "party": "ไทยก้าวหน้า",
-      "votes": 429,
+      "name": "นายนิกร จันทร์หอม",
+      "party": "รวมไทยสร้างชาติ",
+      "votes": 476,
       "candidate_uuid": "c035041f-2ac9-434c-a566-826e55485618",
       "is_active": true
     }
   ],
-  "unmatched_candidates": [
-    {
-      "number": 7,
-      "name": "นางมลธิชา ไชยบาล",
-      "party": "กล้าธรรม",
-      "votes": 28526,
-      "candidate_uuid": null,
-      "is_active": null
-    },
-    {
-      "number": 8,
-      "name": "นางภัทรวัลย์ ผลไพบูลย์",
-      "party": "พลวัต",
-      "votes": 301,
-      "candidate_uuid": null,
-      "is_active": null
-    }
-  ]
+  "unmatched_candidates": []
 }

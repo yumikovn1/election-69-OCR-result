@@ -19,8 +19,8 @@
   "results": [
     {
       "number": 1,
-      "party": "ไม่ปรากฏชื่อพรรค",
-      "votes": 0
+      "party": "ไทยทรัพย์ทวี",
+      "votes": 1432
     },
     {
       "number": 2,
@@ -321,6 +321,13 @@
     "no_votes": 1058
   },
   "matched_parties": [
+    {
+      "number": 1,
+      "party": "ไทยทรัพย์ทวี",
+      "votes": 1432,
+      "party_uuid": "aec0c4f2-be03-4a06-a205-b00971871173",
+      "party_code": "1"
+    },
     {
       "number": 2,
       "party": "เพื่อชาติไทย",
@@ -712,13 +719,6 @@
       "votes": 50,
       "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
       "party_code": "57"
-    },
-    {
-      "number": 1,
-      "party": "ไทยทรัพย์ทวี",
-      "votes": 0,
-      "party_uuid": "aec0c4f2-be03-4a06-a205-b00971871173",
-      "party_code": "1"
     }
   ],
   "unmatched_parties": []

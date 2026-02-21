@@ -79,7 +79,7 @@
     },
     {
       "number": 13,
-      "party": "พลังประชาชน",
+      "party": "รวมพลังประชาชน",
       "votes": 692
     },
     {
@@ -407,10 +407,10 @@
     },
     {
       "number": 13,
-      "party": "พลังประชาชน",
+      "party": "รวมพลังประชาชน",
       "votes": 692,
-      "party_uuid": "03347cbc-6089-474c-a3f6-484ae981c9a6",
-      "party_code": "43"
+      "party_uuid": "c10044e9-2d3c-4481-b323-a9aef1851236",
+      "party_code": "13"
     },
     {
       "number": 14,
@@ -616,6 +616,13 @@
       "party_code": "42"
     },
     {
+      "number": 43,
+      "party": "พลังประชารัฐ",
+      "votes": 165,
+      "party_uuid": "03347cbc-6089-474c-a3f6-484ae981c9a6",
+      "party_code": "43"
+    },
+    {
       "number": 44,
       "party": "โอกาสใหม่",
       "votes": 36,
@@ -714,13 +721,5 @@
       "party_code": "57"
     }
   ],
-  "unmatched_parties": [
-    {
-      "number": 43,
-      "party": "พลังประชารัฐ",
-      "votes": 165,
-      "party_uuid": null,
-      "party_code": null
-    }
-  ]
+  "unmatched_parties": []
 }

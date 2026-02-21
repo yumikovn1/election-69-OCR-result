@@ -124,7 +124,7 @@
     },
     {
       "number": 21,
-      "party": "วิชชันใหม่",
+      "party": "วิชชั่นใหม่",
       "votes": 26
     },
     {
@@ -464,6 +464,13 @@
       "party_code": "23"
     },
     {
+      "number": 21,
+      "party": "วิชชั่นใหม่",
+      "votes": 26,
+      "party_uuid": "c126e4e4-be85-44e6-bf3e-f9331b9f91a9",
+      "party_code": "24"
+    },
+    {
       "number": 22,
       "party": "เพื่อชีวิตใหม่",
       "votes": 58,
@@ -696,13 +703,6 @@
     }
   ],
   "unmatched_parties": [
-    {
-      "number": 21,
-      "party": "วิชชันใหม่",
-      "votes": 26,
-      "party_uuid": null,
-      "party_code": null
-    },
     {
       "number": 36,
       "party": "พลังธรรมใหม่",

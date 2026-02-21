@@ -18,6 +18,11 @@
   },
   "results": [
     {
+      "number": 3,
+      "party": "ใหม่",
+      "votes": 1209
+    },
+    {
       "number": 2,
       "party": "ไทยทรัพย์ทวี",
       "votes": 228
@@ -316,6 +321,13 @@
     "no_votes": 2898
   },
   "matched_parties": [
+    {
+      "number": 3,
+      "party": "ใหม่",
+      "votes": 1209,
+      "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
+      "party_code": "3"
+    },
     {
       "number": 2,
       "party": "ไทยทรัพย์ทวี",

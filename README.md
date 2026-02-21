@@ -26,23 +26,22 @@ For official and authoritative results, please always refer to the original docu
 
 ## 📊 Data Coverage / ความครอบคลุมของข้อมูล
 
-ประมวลผลจาก **776 PDF scans** (แบบ สส.6/1) จาก กกต. → OCR → JSON **~800 files**
+ประมวลผลจาก **776 PDF scans** (แบบ สส.6/1 สแกนจากเครื่อง Canon ไม่มี text layer) จาก กกต. → Gemini Vision OCR → structured JSON **773 files**
 
 |  | สส.เขต (Constituency) | บัญชีรายชื่อ (Party List) |
 |---|---|---|
-| **เขตที่นำเข้าแล้ว** | 377 / 400 (94.3%) | 386 / 400 (96.5%) |
-| **จังหวัด** | 76 | 76 |
+| **เขตที่นำเข้าแล้ว** | 387 / 400 (96.8%) | 386 / 400 (96.5%) |
+| **Vote sum mismatches** | 0 | 0 |
+| **Data consistency** | ✓ (area = province = national) | ✓ (area = province = national) |
 
-### ตัวเลขสำคัญ — แบบแบ่งเขต (Constituency)
+### ตัวเลขสำคัญ — Final Result
 
-| รายการ | จำนวน |
-|--------|-------|
-| คะแนนรวมที่ถูกต้อง (valid votes) | 32,949,094 |
-| ผู้มีสิทธิเลือกตั้ง (eligible voters) | 49,925,837 |
-| บัตรเสีย (invalid votes) | 1,265,063 |
-| ไม่เลือกผู้สมัครผู้ใด (no votes) | 1,520,450 |
+|  | สส.เขต (Constituency) | บัญชีรายชื่อ (Party List) |
+|---|---|---|
+| **คะแนนรวม (total votes)** | 33,819,647 | 33,903,675 |
+| **ผู้มีสิทธิเลือกตั้ง (eligible voters)** | 51,263,889 | 51,175,456 |
 
-### ตัวเลขสำคัญ — แบบบัญชีรายชื่อ (Party List) Top 5
+### แบบบัญชีรายชื่อ (Party List) — Top 5
 
 | พรรค | คะแนน |
 |------|-------|
@@ -64,11 +63,11 @@ data/
 │   ├── party_list.csv              # ผลแบบบัญชีรายชื่อ ทุกพรรค (22,006 rows)
 │   └── summary_winners.csv        # สรุปผู้ชนะแบบแบ่งเขต (387 rows)
 ├── matched/                        # JSON ที่ผ่าน validation + matched กับฐานข้อมูลผู้สมัคร
-│   ├── constituency/               # แบบแบ่งเขต (377 files)
+│   ├── constituency/               # แบบแบ่งเขต (387 files)
 │   ├── party_list/                 # แบบบัญชีรายชื่อ (386 files)
 │   ├── issues.json                 # รายการปัญหาที่พบ
 │   └── validation_report.json      # สรุปผลการตรวจสอบ
-└── ocr-output/                     # JSON ดิบจาก OCR (ครบกว่า matched)
+└── ocr-output/                     # JSON ดิบจาก OCR
     ├── constituency/               # แบบแบ่งเขต (387 files)
     └── party_list/                 # แบบบัญชีรายชื่อ (386 files)
 ```
@@ -92,8 +91,6 @@ data/
 - `issues.json` — รายการปัญหาที่พบระหว่าง validation
 - `validation_report.json` — สรุปผลการตรวจสอบทั้งหมด
 
-> ไฟล์ matched น้อยกว่า raw เล็กน้อย (763 vs 773) เพราะบางเขต match กับฐานข้อมูลไม่สำเร็จ
-
 ### Raw OCR JSON (ข้อมูลดิบ)
 
 - **ocr-output/constituency/** — ผลคะแนนแบบแบ่งเขตเลือกตั้ง (387 files)
@@ -101,11 +98,28 @@ data/
 
 ---
 
-## 🚫 Incomplete Data / ข้อมูลที่ยังไม่ครบถ้วน
+## 🔍 Quality Assurance / การตรวจสอบคุณภาพ
 
-### กกต. ยังไม่ประกาศผลอย่างเป็นทางการ (Not yet officially announced by ECT)
+พบ **15 party list vote sum mismatches** จาก OCR errors — แก้ไขทั้งหมดแล้ว:
 
-ตามประกาศ กกต. ประจำเขตเลือกตั้ง ผลการนับคะแนน **ยกเว้น** 3 เขตต่อไปนี้:
+| ประเภทปัญหา | จำนวน | ตัวอย่าง |
+|-------------|-------|----------|
+| Phantom/hallucinated entries | 10 areas | OCR สร้าง "Unknown Party" แทนพรรคจริง |
+| Missing parties | 7 areas | พรรคตกหล่น เช่น ใหม่, รวมใจไทย, ไทยทรัพย์ทวี |
+| Digit misreads | 3 areas | ๖→๕, ๐↔๒ transposition, ๓๖,๐๓๒→๓๐,๖๓๒ |
+
+> ทุก case แก้โดยเทียบกับ PDF ต้นฉบับ ใช้ Thai text ในวงเล็บเป็น authoritative source
+
+### Remaining Known Issues
+
+- **35 unmatched party entries** — phantom/blank entries (0 votes) ไม่กระทบตัวเลขรวม
+- **2 unmatched candidates** — ถูกถอนชื่อ/ชื่อไม่ตรง (0–503 votes)
+
+---
+
+## 🚫 Missing Areas / เขตที่ยังไม่มีข้อมูล
+
+### กกต. ยังไม่ประกาศผล 3 เขต
 
 | จังหวัด | เขต | สถานะ |
 |---------|------|--------|
@@ -115,41 +129,28 @@ data/
 
 > ดูประกาศต้นฉบับ: [`assets/ect-announcement.jpeg`](assets/ect-announcement.jpeg)
 
-### เขตที่ขาดหาย (Missing Areas)
+### ยังไม่มี PDF จาก กกต. (13 สส.เขต + 14 บัญชีรายชื่อ)
 
-**สส.เขต (Constituency)** — ขาด 23 เขต | **บัญชีรายชื่อ (Party List)** — ขาด 14 เขต
-
-| จังหวัด | เขตที่ขาด | หมายเหตุ |
-|---------|----------|----------|
-| บุรีรัมย์ (31) | ทั้ง 10 เขต | ไม่มี PDF จาก กกต. |
-| กรุงเทพมหานคร (10) | เขต 15 | กกต. ยังไม่ประกาศ |
-| ชัยภูมิ (11) | เขต 6, 8 | |
-| ตราด (16) | เขต 4 | |
-| นครพนม (20) | เขต 8 | |
-| นราธิวาส (25) | เขต 2 | |
-| ปัตตานี (32) | เขต 6 | |
-| พระนครศรีอยุธยา (33) | เขต 8 | |
-| แพร่ (41) | เขต 8 | |
-| มุกดาหาร (44) | เขต 6 | |
-| เชียงใหม่ (50) | เขต 8 | |
-| น่าน (55) | เขต 1 | กกต. ยังไม่ประกาศ |
-| สกลนคร (57) | เขต 6 | |
-| สงขลา (90) | เขต 6 | |
-| เพชรบูรณ์ (40) | เขต 7 | |
-| แม่ฮ่องสอน (45) | เขต 6 | |
-| ยะลา (47) | เขต 6 | |
-| สมุทรปราการ (60) | เขต 6 | |
+| จังหวัด | เขตที่ขาด (สส.เขต) | เขตที่ขาด (บัญชีรายชื่อ) | หมายเหตุ |
+|---------|-------------------|------------------------|----------|
+| บุรีรัมย์ (28) | ทั้ง 10 เขต | ทั้ง 10 เขต | ไม่มี PDF จาก กกต. |
+| กรุงเทพมหานคร (10) | เขต 15 | เขต 15 | กกต. ยังไม่ประกาศ |
+| น่าน (26) | เขต 1 | — | กกต. ยังไม่ประกาศ (มีเฉพาะบัญชีรายชื่อ) |
+| นครพนม (20) | — | เขต 2 | มีเฉพาะ สส.เขต |
+| ปราจีนบุรี (31) | เขต 2 | เขต 2 | |
+| อุดรธานี (74) | — | เขต 6 | กกต. ยังไม่ประกาศ (มีเฉพาะ สส.เขต) |
 
 ---
 
 ## 📅 Timeline
 
-| วันที่ | เวลา | เหตุการณ์ |
-|-------|------|----------|
-| 2026-02-08 (8 ก.พ. 69) | — | วันเลือกตั้ง สส. 2569 |
-| 2026-02-20 (20 ก.พ. 69) | — | กกต. ประกาศผลการนับคะแนนอย่างเป็นทางการ (แบบ สส.6/1) ยกเว้น 3 เขต: กทม.15, น่าน 1, อุดรธานี 6 |
-| 2026-02-20 (20 ก.พ. 69) | — | เริ่มประมวลผล OCR จาก 776 PDF scans |
-| 2026-02-20 (20 ก.พ. 69) | — | นำเข้าข้อมูล matched: สส.เขต 377/400 (94.3%), บัญชีรายชื่อ 386/400 (96.5%) |
+| วันที่ | เหตุการณ์ |
+|-------|----------|
+| 2026-02-08 (8 ก.พ. 69) | วันเลือกตั้ง สส. 2569 |
+| 2026-02-20 (20 ก.พ. 69) | กกต. ประกาศผลการนับคะแนนอย่างเป็นทางการ 100% เป็น PDF (776 ไฟล์) ยกเว้น 3 เขต |
+| 2026-02-20 (20 ก.พ. 69) | เริ่มประมวลผล OCR จาก 776 PDF scans |
+| 2026-02-21 (21 ก.พ. 69) | นำเข้าข้อมูล matched: สส.เขต 387/400, บัญชีรายชื่อ 386/400 |
+| 2026-02-21 (21 ก.พ. 69) | แก้ไข 15 OCR errors (phantom entries, missing parties, digit misreads) — vote sum mismatch = 0 |
 
 > Timeline จะอัปเดตเมื่อ กกต. ประกาศผลเพิ่มเติม หรือเมื่อข้อมูลได้รับการแก้ไข
 
@@ -187,7 +188,7 @@ If you find any inaccuracies in the data, please report via:
 ## 🛠️ Processing Pipeline
 
 ```
-776 PDF scans (กกต.)
+776 PDF scans (กกต. — Canon copier, no text layer)
     │
     ▼
 ┌──────────────────┐     ┌──────────────────────┐
@@ -206,6 +207,7 @@ If you find any inaccuracies in the data, please report via:
 ┌──────────────────┐
 │  Validate + Match │
 │  Candidate UUIDs  │
+│  Vote sum check   │
 └────────┬─────────┘
          │
          ▼
@@ -213,11 +215,11 @@ If you find any inaccuracies in the data, please report via:
    (raw + matched)
 ```
 
-1. **Source** — 776 PDF scans (แบบ สส.6/1) จาก กกต. ซึ่งเป็นเอกสารที่อ่านยากและจัดการได้ลำบาก
-2. **OCR + LLM** — ประมวลผลด้วยหลายระบบ: Google Cloud Vision API, Claude, Gemini และ OCR engine/LLM อื่นๆ
+1. **Source** — 776 PDF scans (แบบ สส.6/1) จาก กกต. สแกนจากเครื่อง Canon ไม่มี text layer ต้อง OCR ทั้งหมด
+2. **OCR + LLM** — Gemini Vision เป็นหลัก + Google Cloud Vision API, Claude และ OCR engine/LLM อื่นๆ
 3. **Cross-validation** — เปรียบเทียบผลข้ามระบบ OCR/LLM + เทียบกับฐานข้อมูลอาสาสมัครวันเลือกตั้ง และเว็บไม่เป็นทางการของ กกต.
-4. **Validate + Match** — จับคู่ผู้สมัครกับฐานข้อมูล พร้อมระบุ `candidate_uuid` และรายงานปัญหาที่พบ
-5. **Output** — JSON (raw ~800 files + matched ~763 files) และ CSV
+4. **Validate + Match** — ตรวจ vote sums, match province codes + candidate/party UUIDs จาก DB, แก้ไข OCR errors
+5. **Output** — JSON (raw 773 files + matched 773 files) และ CSV
 
 ## 📜 License
 

@@ -1,6 +1,6 @@
 {
   "province_name": "สุรินทร์",
-  "constituency_number": null,
+  "constituency_number": 5,
   "type": "constituency",
   "summary_by_section": {
     "1.1": 135454,

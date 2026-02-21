@@ -225,7 +225,7 @@
     {
       "number": 42,
       "party": "กล้าธรรม",
-      "votes": 4639
+      "votes": 8639
     },
     {
       "number": 43,
@@ -611,7 +611,7 @@
     {
       "number": 42,
       "party": "กล้าธรรม",
-      "votes": 4639,
+      "votes": 8639,
       "party_uuid": "a62aca08-91b7-4f3f-ba8f-cb9e884a3799",
       "party_code": "42"
     },

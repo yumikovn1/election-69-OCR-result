@@ -18,9 +18,9 @@
   },
   "results": [
     {
-      "number": 1,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 5,
+      "party": "รวมใจไทย",
+      "votes": 165
     },
     {
       "number": 2,
@@ -293,14 +293,14 @@
       "votes": 35
     },
     {
-      "number": 56,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 6,
+      "party": "รวมไทยสร้างชาติ",
+      "votes": 1211
     },
     {
-      "number": 57,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 7,
+      "party": "พลวัต",
+      "votes": 83
     }
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ect-pdf-clean/party_list/22. นครศรีธรรมราช เขต 3 (บช).pdf",

@@ -18,9 +18,9 @@
   },
   "results": [
     {
-      "number": 1,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 5,
+      "party": "รวมใจไทย",
+      "votes": 165
     },
     {
       "number": 2,
@@ -293,14 +293,14 @@
       "votes": 35
     },
     {
-      "number": 56,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 6,
+      "party": "รวมไทยสร้างชาติ",
+      "votes": 1211
     },
     {
-      "number": 57,
-      "party": "Unknown Party",
-      "votes": 0
+      "number": 7,
+      "party": "พลวัต",
+      "votes": 83
     }
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/22. นครศรีธรรมราช เขต 3.json",
@@ -321,6 +321,13 @@
     "no_votes": 1227
   },
   "matched_parties": [
+    {
+      "number": 5,
+      "party": "รวมใจไทย",
+      "votes": 165,
+      "party_uuid": "e9f5dc95-0d5c-46bc-8e2c-be791faa2b27",
+      "party_code": "5"
+    },
     {
       "number": 2,
       "party": "ไทยทรัพย์ทวี",
@@ -698,29 +705,21 @@
       "votes": 35,
       "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
       "party_code": "57"
+    },
+    {
+      "number": 6,
+      "party": "รวมไทยสร้างชาติ",
+      "votes": 1211,
+      "party_uuid": "115da917-bf32-4e96-a2ae-b7818d0909ee",
+      "party_code": "6"
+    },
+    {
+      "number": 7,
+      "party": "พลวัต",
+      "votes": 83,
+      "party_uuid": "bd8d9f14-f757-41fb-8f37-d6128d9d012d",
+      "party_code": "7"
     }
   ],
-  "unmatched_parties": [
-    {
-      "number": 1,
-      "party": "Unknown Party",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    },
-    {
-      "number": 56,
-      "party": "Unknown Party",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    },
-    {
-      "number": 57,
-      "party": "Unknown Party",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    }
-  ]
+  "unmatched_parties": []
 }

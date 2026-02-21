@@ -18,9 +18,9 @@
   },
   "results": [
     {
-      "number": 1,
-      "party": "",
-      "votes": 0
+      "number": 3,
+      "party": "ใหม่",
+      "votes": 1121
     },
     {
       "number": 2,
@@ -321,6 +321,13 @@
     "no_votes": 2030
   },
   "matched_parties": [
+    {
+      "number": 3,
+      "party": "ใหม่",
+      "votes": 1121,
+      "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
+      "party_code": "3"
+    },
     {
       "number": 2,
       "party": "ไทยทรัพย์ทวี",
@@ -712,13 +719,6 @@
       "votes": 26,
       "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
       "party_code": "57"
-    },
-    {
-      "number": 1,
-      "party": "ใหม่",
-      "votes": 0,
-      "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
-      "party_code": "3"
     }
   ],
   "unmatched_parties": []

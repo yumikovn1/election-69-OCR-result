@@ -28,9 +28,9 @@
       "votes": 1343
     },
     {
-      "number": 3,
-      "party": "",
-      "votes": 0
+      "number": 31,
+      "party": "ประชากรไทย",
+      "votes": 157
     },
     {
       "number": 4,
@@ -65,7 +65,7 @@
     {
       "number": 10,
       "party": "เพื่อไทย",
-      "votes": 36032
+      "votes": 30632
     },
     {
       "number": 11,
@@ -173,9 +173,9 @@
       "votes": 193
     },
     {
-      "number": 32,
-      "party": "",
-      "votes": 0
+      "number": 57,
+      "party": "พลังไทยรักชาติ",
+      "votes": 65
     },
     {
       "number": 33,
@@ -336,6 +336,13 @@
       "party_code": "2"
     },
     {
+      "number": 31,
+      "party": "ประชากรไทย",
+      "votes": 157,
+      "party_uuid": "7ffe2115-72d1-4d71-9962-03ff61afc67c",
+      "party_code": "31"
+    },
+    {
       "number": 4,
       "party": "ใหม่",
       "votes": 499,
@@ -380,7 +387,7 @@
     {
       "number": 10,
       "party": "เพื่อไทย",
-      "votes": 36032,
+      "votes": 30632,
       "party_uuid": "2d8a1c84-0bc8-4377-965d-c020a0097c27",
       "party_code": "9"
     },
@@ -530,6 +537,13 @@
       "votes": 193,
       "party_uuid": "b6a2dc38-6f7d-4865-a6e0-a1b60a2edf32",
       "party_code": "30"
+    },
+    {
+      "number": 57,
+      "party": "พลังไทยรักชาติ",
+      "votes": 65,
+      "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
+      "party_code": "57"
     },
     {
       "number": 33,
@@ -705,22 +719,7 @@
       "votes": 49,
       "party_uuid": "7255d2d0-1f49-4fd8-adad-7acfea2d5126",
       "party_code": "56"
-    },
-    {
-      "number": 32,
-      "party": "ประชากรไทย",
-      "votes": 0,
-      "party_uuid": "7ffe2115-72d1-4d71-9962-03ff61afc67c",
-      "party_code": "31"
     }
   ],
-  "unmatched_parties": [
-    {
-      "number": 3,
-      "party": "",
-      "votes": 0,
-      "party_uuid": null,
-      "party_code": null
-    }
-  ]
+  "unmatched_parties": []
 }
