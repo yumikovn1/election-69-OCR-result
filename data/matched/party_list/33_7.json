@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "พรรคที่ 1",
-      "votes": 0
+      "votes": 2387
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 78587,
     "good_votes": 78925,
-    "sum_diff_pct": 0.43
+    "sum_diff_pct": 0.4
   },
   "province_code": "33",
   "province_name_normalized": "ศรีสะเกษ",
@@ -316,7 +316,7 @@
     "voters_came": 84203,
     "ballots_received": 128820,
     "ballots_used": 84203,
-    "good_votes": 78587,
+    "good_votes": 78925,
     "invalid_votes": 4270,
     "no_votes": 1008
   },

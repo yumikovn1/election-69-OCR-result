@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 83229,
     "good_votes": 82880,
-    "sum_diff_pct": 0.42
+    "sum_diff_pct": 0.4
   },
   "province_code": "46",
   "province_name_normalized": "กาฬสินธุ์",
@@ -316,7 +316,7 @@
     "voters_came": 90138,
     "ballots_received": 133396,
     "ballots_used": 90138,
-    "good_votes": 83229,
+    "good_votes": 82880,
     "invalid_votes": 4696,
     "no_votes": 2562
   },

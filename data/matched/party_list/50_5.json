@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "",
-      "votes": 0
+      "votes": 3713
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 93274,
     "good_votes": 93381,
-    "sum_diff_pct": 0.11
+    "sum_diff_pct": 0.1
   },
   "province_code": "50",
   "province_name_normalized": "เชียงใหม่",
@@ -316,7 +316,7 @@
     "voters_came": 102642,
     "ballots_received": 139560,
     "ballots_used": 102642,
-    "good_votes": 93274,
+    "good_votes": 93381,
     "invalid_votes": 4942,
     "no_votes": 4319
   },

@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "พรรคที่ 1",
-      "votes": 0
+      "votes": 1010
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 89645,
     "good_votes": 89744,
-    "sum_diff_pct": 0.11
+    "sum_diff_pct": 0.1
   },
   "province_code": "70",
   "province_name_normalized": "ราชบุรี",
@@ -316,7 +316,7 @@
     "voters_came": 101443,
     "ballots_received": 139540,
     "ballots_used": 101443,
-    "good_votes": 89645,
+    "good_votes": 89744,
     "invalid_votes": 6388,
     "no_votes": 5311
   },

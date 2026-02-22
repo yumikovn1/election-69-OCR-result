@@ -220,7 +220,7 @@
     {
       "number": 41,
       "party": "Unknown Party 41",
-      "votes": 0
+      "votes": 24
     },
     {
       "number": 41,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 100918,
     "good_votes": 100951,
-    "sum_diff_pct": 0.03
+    "sum_diff_pct": 0.0
   },
   "province_code": "80",
   "province_name_normalized": "นครศรีธรรมราช",
@@ -316,7 +316,7 @@
     "voters_came": 106726,
     "ballots_received": 145094,
     "ballots_used": 106726,
-    "good_votes": 100918,
+    "good_votes": 100951,
     "invalid_votes": 3098,
     "no_votes": 2677
   },

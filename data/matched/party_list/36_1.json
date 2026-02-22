@@ -3,7 +3,7 @@
   "constituency_number": 1,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 169441,
+    "1.1": 129541,
     "1.2": 88777,
     "2.1": 131010,
     "2.2": 88777,
@@ -297,7 +297,7 @@
   "province_code": "36",
   "province_name_normalized": "ชัยภูมิ",
   "summary": {
-    "eligible_voters": 169441,
+    "eligible_voters": 129541,
     "voters_came": 88777,
     "ballots_received": 131010,
     "ballots_used": 88777,

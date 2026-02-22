@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "UNKNOWN",
-      "votes": 0
+      "votes": 19
     },
     {
       "number": 1,
@@ -135,7 +135,7 @@
     {
       "number": 24,
       "party": "บ่วงชนไทย",
-      "votes": 54
+      "votes": 15
     },
     {
       "number": 24,
@@ -315,7 +315,7 @@
     "eligible_voters": 133983,
     "voters_came": 96559,
     "ballots_received": 130040,
-    "ballots_used": 96561,
+    "ballots_used": 96559,
     "good_votes": 92886,
     "invalid_votes": 1462,
     "no_votes": 2211

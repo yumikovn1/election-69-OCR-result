@@ -245,7 +245,7 @@
     {
       "number": 46,
       "party": "ประชาชน",
-      "votes": 14484
+      "votes": 14844
     },
     {
       "number": 47,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/77. อุบลราชธานี เขต 7.json",
   "_validation": {
-    "vote_sum": 84603,
+    "vote_sum": 84963,
     "good_votes": 84963,
-    "sum_diff_pct": 0.42
+    "sum_diff_pct": 0.0
   },
   "province_code": "34",
   "province_name_normalized": "อุบลราชธานี",
@@ -316,7 +316,7 @@
     "voters_came": 90567,
     "ballots_received": 135484,
     "ballots_used": 90567,
-    "good_votes": 84603,
+    "good_votes": 84963,
     "invalid_votes": 4240,
     "no_votes": 1364
   },
@@ -639,7 +639,7 @@
     {
       "number": 46,
       "party": "ประชาชน",
-      "votes": 14484,
+      "votes": 14844,
       "party_uuid": "1116011c-1ef3-4cca-a186-c1b9f7984ede",
       "party_code": "46"
     },

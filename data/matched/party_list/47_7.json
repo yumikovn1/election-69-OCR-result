@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 72383,
     "good_votes": 71983,
-    "sum_diff_pct": 0.56
+    "sum_diff_pct": 0.6
   },
   "province_code": "47",
   "province_name_normalized": "สกลนคร",
@@ -316,7 +316,7 @@
     "voters_came": 76157,
     "ballots_received": 131320,
     "ballots_used": 76157,
-    "good_votes": 72383,
+    "good_votes": 71983,
     "invalid_votes": 3623,
     "no_votes": 551
   },

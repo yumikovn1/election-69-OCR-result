@@ -3,7 +3,7 @@
   "constituency_number": 6,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 166887,
+    "1.1": 126887,
     "1.2": 97368,
     "2.1": 140400,
     "2.2": 97368,
@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "Party 1 (Not Listed in Document)",
-      "votes": 0
+      "votes": 378
     },
     {
       "number": 1,
@@ -312,7 +312,7 @@
   "province_code": "73",
   "province_name_normalized": "นครปฐม",
   "summary": {
-    "eligible_voters": 166887,
+    "eligible_voters": 126887,
     "voters_came": 97368,
     "ballots_received": 140400,
     "ballots_used": 97368,

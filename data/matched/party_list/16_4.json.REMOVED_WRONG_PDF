@@ -3,7 +3,7 @@
   "constituency_number": 4,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 151712,
+    "1.1": 149394,
     "1.2": 110263,
     "2.1": 155926,
     "2.2": 110263,
@@ -312,7 +312,7 @@
   "province_code": "16",
   "province_name_normalized": "ลพบุรี",
   "summary": {
-    "eligible_voters": 151712,
+    "eligible_voters": 149394,
     "voters_came": 110263,
     "ballots_received": 155926,
     "ballots_used": 110263,

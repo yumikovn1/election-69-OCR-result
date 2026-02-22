@@ -302,7 +302,7 @@
   "_validation": {
     "vote_sum": 94506,
     "good_votes": 94612,
-    "sum_diff_pct": 0.11
+    "sum_diff_pct": 0.1
   },
   "province_code": "10",
   "province_name_normalized": "กรุงเทพมหานคร",
@@ -311,7 +311,7 @@
     "voters_came": 99509,
     "ballots_received": 138533,
     "ballots_used": 99509,
-    "good_votes": 94506,
+    "good_votes": 94612,
     "invalid_votes": 1949,
     "no_votes": 2948
   },

@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "ชาติพัฒนา",
-      "votes": 0
+      "votes": 1837
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 92036,
     "good_votes": 92072,
-    "sum_diff_pct": 0.04
+    "sum_diff_pct": 0.0
   },
   "province_code": "30",
   "province_name_normalized": "นครราชสีมา",
@@ -316,7 +316,7 @@
     "voters_came": 99861,
     "ballots_received": 139780,
     "ballots_used": 99861,
-    "good_votes": 92036,
+    "good_votes": 92072,
     "invalid_votes": 5696,
     "no_votes": 2093
   },

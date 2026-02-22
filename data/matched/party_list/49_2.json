@@ -70,7 +70,7 @@
     {
       "number": 11,
       "party": "เศรษฐกิจ",
-      "votes": 3878
+      "votes": 3898
     },
     {
       "number": 12,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/44. มุกดาหาร เขต 2.json",
   "_validation": {
-    "vote_sum": 93374,
+    "vote_sum": 93394,
     "good_votes": 93394,
-    "sum_diff_pct": 0.02
+    "sum_diff_pct": 0.0
   },
   "province_code": "49",
   "province_name_normalized": "มุกดาหาร",
@@ -316,7 +316,7 @@
     "voters_came": 100884,
     "ballots_received": 144308,
     "ballots_used": 100884,
-    "good_votes": 93374,
+    "good_votes": 93394,
     "invalid_votes": 5240,
     "no_votes": 2250
   },
@@ -394,7 +394,7 @@
     {
       "number": 11,
       "party": "เศรษฐกิจ",
-      "votes": 3878,
+      "votes": 3898,
       "party_uuid": "0c044088-618b-49af-a291-fb28ffe9e0f8",
       "party_code": "11"
     },

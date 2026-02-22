@@ -302,7 +302,7 @@
   "_validation": {
     "vote_sum": 100890,
     "good_votes": 101587,
-    "sum_diff_pct": 0.69
+    "sum_diff_pct": 0.7
   },
   "province_code": "30",
   "province_name_normalized": "นครราชสีมา",
@@ -311,7 +311,7 @@
     "voters_came": 112031,
     "ballots_received": 141885,
     "ballots_used": 112031,
-    "good_votes": 100890,
+    "good_votes": 101587,
     "invalid_votes": 6762,
     "no_votes": 3682
   },

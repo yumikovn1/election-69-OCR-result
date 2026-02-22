@@ -3,18 +3,18 @@
   "constituency_number": 3,
   "type": "party_list",
   "summary_by_section": {
-    "1.1": 99188,
-    "1.2": 70192,
-    "2.1": 102060,
-    "2.2": 70192,
-    "2.3": 31868,
+    "1.1": 99198,
+    "1.2": 70062,
+    "2.1": 102000,
+    "2.2": 70062,
+    "2.3": 31938,
     "3.1": 67850,
     "3.2": 5,
-    "3.3": 2337,
-    "3.4": 70192,
+    "3.3": 2117,
+    "3.4": 70072,
     "4.1": 65313,
-    "4.2": 3721,
-    "4.3": 1158
+    "4.2": 3728,
+    "4.3": 1021
   },
   "results": [
     {
@@ -307,18 +307,18 @@
   "_validation": {
     "vote_sum": 64794,
     "good_votes": 65313,
-    "sum_diff_pct": 0.79
+    "sum_diff_pct": 0.8
   },
   "province_code": "94",
   "province_name_normalized": "ปัตตานี",
   "summary": {
-    "eligible_voters": 99188,
-    "voters_came": 70192,
+    "eligible_voters": 99198,
+    "voters_came": 70062,
     "ballots_received": 102060,
     "ballots_used": 70192,
-    "good_votes": 64794,
-    "invalid_votes": 3721,
-    "no_votes": 1158
+    "good_votes": 65313,
+    "invalid_votes": 3728,
+    "no_votes": 1021
   },
   "matched_parties": [
     {

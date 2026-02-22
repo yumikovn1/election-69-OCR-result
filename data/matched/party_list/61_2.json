@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "N/A",
-      "votes": 0
+      "votes": 843
     },
     {
       "number": 1,
@@ -316,7 +316,7 @@
     "voters_came": 83898,
     "ballots_received": 134619,
     "ballots_used": 83898,
-    "good_votes": 77047,
+    "good_votes": 77279,
     "invalid_votes": 4250,
     "no_votes": 2369
   },

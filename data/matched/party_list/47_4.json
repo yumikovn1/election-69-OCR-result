@@ -180,7 +180,7 @@
     {
       "number": 33,
       "party": "ประชาชาติ",
-      "votes": 223
+      "votes": 123
     },
     {
       "number": 34,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/57. สกลนคร เขต 4.json",
   "_validation": {
-    "vote_sum": 76244,
+    "vote_sum": 76144,
     "good_votes": 76144,
-    "sum_diff_pct": 0.13
+    "sum_diff_pct": 0.0
   },
   "province_code": "47",
   "province_name_normalized": "สกลนคร",
@@ -316,7 +316,7 @@
     "voters_came": 83326,
     "ballots_received": 132760,
     "ballots_used": 83326,
-    "good_votes": 76244,
+    "good_votes": 76144,
     "invalid_votes": 4045,
     "no_votes": 3137
   },
@@ -541,7 +541,7 @@
     {
       "number": 33,
       "party": "ประชาชาติ",
-      "votes": 223,
+      "votes": 123,
       "party_uuid": "7f4755ca-ea3a-4023-869d-9cabba328db0",
       "party_code": "33"
     },

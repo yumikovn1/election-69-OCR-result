@@ -205,7 +205,7 @@
     {
       "number": 38,
       "party": "พลังธรรมใหม่",
-      "votes": 93
+      "votes": 48
     },
     {
       "number": 39,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/1. กรุงเทพมหานคร เขต 11.json",
   "_validation": {
-    "vote_sum": 96157,
+    "vote_sum": 96112,
     "good_votes": 96112,
-    "sum_diff_pct": 0.05
+    "sum_diff_pct": 0.0
   },
   "province_code": "10",
   "province_name_normalized": "กรุงเทพมหานคร",
@@ -316,7 +316,7 @@
     "voters_came": 100367,
     "ballots_received": 139579,
     "ballots_used": 100367,
-    "good_votes": 96157,
+    "good_votes": 96112,
     "invalid_votes": 1769,
     "no_votes": 2486
   },
@@ -583,7 +583,7 @@
     {
       "number": 38,
       "party": "พลังธรรมใหม่",
-      "votes": 93,
+      "votes": 48,
       "party_uuid": "2b1669bf-b61b-40b2-96a4-b235fa1e1501",
       "party_code": "38"
     },

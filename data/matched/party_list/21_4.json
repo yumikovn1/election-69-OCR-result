@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 88350,
     "good_votes": 88462,
-    "sum_diff_pct": 0.13
+    "sum_diff_pct": 0.1
   },
   "province_code": "21",
   "province_name_normalized": "ระยอง",
@@ -316,7 +316,7 @@
     "voters_came": 94724,
     "ballots_received": 130998,
     "ballots_used": 94724,
-    "good_votes": 88350,
+    "good_votes": 88462,
     "invalid_votes": 3406,
     "no_votes": 2856
   },

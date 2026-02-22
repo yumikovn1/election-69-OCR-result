@@ -30,12 +30,12 @@
     {
       "number": 2,
       "party": "เพื่อชาติไทย",
-      "votes": 1309
+      "votes": 420
     },
     {
       "number": 3,
       "party": "ใหม่",
-      "votes": 612
+      "votes": 1309
     },
     {
       "number": 4,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/5. กำแพงเพชร เขต 3.json",
   "_validation": {
-    "vote_sum": 81857,
+    "vote_sum": 81665,
     "good_votes": 81932,
-    "sum_diff_pct": 0.09
+    "sum_diff_pct": 0.3
   },
   "province_code": "62",
   "province_name_normalized": "กำแพงเพชร",
@@ -316,7 +316,7 @@
     "voters_came": 91355,
     "ballots_received": 138308,
     "ballots_used": 91355,
-    "good_votes": 81857,
+    "good_votes": 81932,
     "invalid_votes": 6661,
     "no_votes": 2762
   },
@@ -331,14 +331,14 @@
     {
       "number": 2,
       "party": "เพื่อชาติไทย",
-      "votes": 1309,
+      "votes": 420,
       "party_uuid": "0db115a9-bb11-4fc0-9008-4acee3614999",
       "party_code": "2"
     },
     {
       "number": 3,
       "party": "ใหม่",
-      "votes": 612,
+      "votes": 1309,
       "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
       "party_code": "3"
     },

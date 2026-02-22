@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 91021,
     "good_votes": 91071,
-    "sum_diff_pct": 0.05
+    "sum_diff_pct": 0.1
   },
   "province_code": "66",
   "province_name_normalized": "พิจิตร",
@@ -316,7 +316,7 @@
     "voters_came": 100830,
     "ballots_received": 147999,
     "ballots_used": 100830,
-    "good_votes": 91021,
+    "good_votes": 91071,
     "invalid_votes": 6323,
     "no_votes": 3436
   },

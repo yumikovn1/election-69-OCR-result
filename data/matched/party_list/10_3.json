@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "",
-      "votes": 0
+      "votes": 31
     },
     {
       "number": 1,
@@ -30,7 +30,7 @@
     {
       "number": 3,
       "party": "",
-      "votes": 0
+      "votes": 149
     },
     {
       "number": 2,
@@ -75,7 +75,7 @@
     {
       "number": 10,
       "party": "ทางเลือกใหม่",
-      "votes": 246
+      "votes": 286
     },
     {
       "number": 11,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/1. กรุงเทพมหานคร เขต 3.json",
   "_validation": {
-    "vote_sum": 78811,
+    "vote_sum": 78851,
     "good_votes": 78875,
-    "sum_diff_pct": 0.08
+    "sum_diff_pct": 0.0
   },
   "province_code": "10",
   "province_name_normalized": "กรุงเทพมหานคร",
@@ -316,7 +316,7 @@
     "voters_came": 82361,
     "ballots_received": 125326,
     "ballots_used": 82361,
-    "good_votes": 78811,
+    "good_votes": 78875,
     "invalid_votes": 1453,
     "no_votes": 2033
   },
@@ -387,7 +387,7 @@
     {
       "number": 10,
       "party": "ทางเลือกใหม่",
-      "votes": 246,
+      "votes": 286,
       "party_uuid": "bdd306a2-80c7-4d7b-a7ff-8dc1ec9fcc76",
       "party_code": "10"
     },

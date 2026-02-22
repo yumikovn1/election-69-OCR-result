@@ -240,7 +240,7 @@
     {
       "number": 45,
       "party": "เป็นธรรม",
-      "votes": 53
+      "votes": 93
     },
     {
       "number": 46,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/48. ร้อยเอ็ด เขต 8.json",
   "_validation": {
-    "vote_sum": 84863,
+    "vote_sum": 84903,
     "good_votes": 84903,
-    "sum_diff_pct": 0.05
+    "sum_diff_pct": 0.0
   },
   "province_code": "45",
   "province_name_normalized": "ร้อยเอ็ด",
@@ -316,7 +316,7 @@
     "voters_came": 89205,
     "ballots_received": 136293,
     "ballots_used": 89205,
-    "good_votes": 84863,
+    "good_votes": 84903,
     "invalid_votes": 3126,
     "no_votes": 1176
   },
@@ -632,7 +632,7 @@
     {
       "number": 45,
       "party": "เป็นธรรม",
-      "votes": 53,
+      "votes": 93,
       "party_uuid": "a54ae018-5399-423a-8a14-4d5c849a79a0",
       "party_code": "45"
     },

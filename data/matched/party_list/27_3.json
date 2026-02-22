@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "ไม่ระบุ",
-      "votes": 0
+      "votes": 2754
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 92248,
     "good_votes": 92333,
-    "sum_diff_pct": 0.09
+    "sum_diff_pct": 0.1
   },
   "province_code": "27",
   "province_name_normalized": "สระแก้ว",
@@ -316,7 +316,7 @@
     "voters_came": 101937,
     "ballots_received": 153383,
     "ballots_used": 101937,
-    "good_votes": 92248,
+    "good_votes": 92333,
     "invalid_votes": 6205,
     "no_votes": 3399
   },

@@ -4,17 +4,17 @@
   "type": "party_list",
   "summary_by_section": {
     "1.1": 121750,
-    "1.2": 91411,
+    "1.2": 91421,
     "2.1": 124138,
-    "2.2": 91411,
-    "2.3": 32127,
+    "2.2": 91421,
+    "2.3": 32717,
     "3.1": 87708,
     "3.2": 0,
-    "3.3": 3703,
-    "3.4": 91411,
+    "3.3": 3713,
+    "3.4": 91421,
     "4.1": 86337,
     "4.2": 2322,
-    "4.3": 2752
+    "4.3": 2762
   },
   "results": [
     {
@@ -225,7 +225,7 @@
     {
       "number": 42,
       "party": "กล้าธรรม",
-      "votes": 64
+      "votes": 74
     },
     {
       "number": 43,
@@ -305,7 +305,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/50. ระยอง เขต 1.json",
   "_validation": {
-    "vote_sum": 86327,
+    "vote_sum": 86337,
     "good_votes": 86337,
     "sum_diff_pct": 0.0
   },
@@ -313,12 +313,12 @@
   "province_name_normalized": "ระยอง",
   "summary": {
     "eligible_voters": 121750,
-    "voters_came": 91411,
+    "voters_came": 91421,
     "ballots_received": 124138,
     "ballots_used": 91421,
     "good_votes": 86337,
     "invalid_votes": 2322,
-    "no_votes": 2752
+    "no_votes": 2762
   },
   "matched_parties": [
     {
@@ -611,7 +611,7 @@
     {
       "number": 42,
       "party": "กล้าธรรม",
-      "votes": 64,
+      "votes": 74,
       "party_uuid": "a62aca08-91b7-4f3f-ba8f-cb9e884a3799",
       "party_code": "42"
     },

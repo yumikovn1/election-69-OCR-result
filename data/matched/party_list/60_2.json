@@ -8,7 +8,7 @@
     "2.1": 137840,
     "2.2": 104185,
     "2.3": 33655,
-    "3.1": 89022,
+    "3.1": 99022,
     "3.2": 44,
     "3.3": 5119,
     "3.4": 104185,
@@ -200,7 +200,7 @@
     {
       "number": 37,
       "party": "ภูมิใจไทย",
-      "votes": 28543
+      "votes": 28593
     },
     {
       "number": 38,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/23. นครสวรรค์ เขต 2.json",
   "_validation": {
-    "vote_sum": 94928,
+    "vote_sum": 94978,
     "good_votes": 94978,
-    "sum_diff_pct": 0.1
+    "sum_diff_pct": 0.0
   },
   "province_code": "60",
   "province_name_normalized": "นครสวรรค์",
@@ -569,7 +569,7 @@
     {
       "number": 37,
       "party": "ภูมิใจไทย",
-      "votes": 28543,
+      "votes": 28593,
       "party_uuid": "013c219e-e197-416d-84ea-00ba9c35465e",
       "party_code": "37"
     },

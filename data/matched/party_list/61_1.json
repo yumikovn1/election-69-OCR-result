@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": null,
-      "votes": 0
+      "votes": 402
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 77398,
     "good_votes": 77569,
-    "sum_diff_pct": 0.22
+    "sum_diff_pct": 0.2
   },
   "province_code": "61",
   "province_name_normalized": "อุทัยธานี",
@@ -316,7 +316,7 @@
     "voters_came": 84560,
     "ballots_received": 127820,
     "ballots_used": 84560,
-    "good_votes": 77398,
+    "good_votes": 77569,
     "invalid_votes": 4102,
     "no_votes": 2889
   },

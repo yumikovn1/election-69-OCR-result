@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 98003,
     "good_votes": 97917,
-    "sum_diff_pct": 0.09
+    "sum_diff_pct": 0.1
   },
   "province_code": "90",
   "province_name_normalized": "สงขลา",
@@ -316,7 +316,7 @@
     "voters_came": 104525,
     "ballots_received": 131266,
     "ballots_used": 104525,
-    "good_votes": 98003,
+    "good_votes": 97917,
     "invalid_votes": 3923,
     "no_votes": 2685
   },

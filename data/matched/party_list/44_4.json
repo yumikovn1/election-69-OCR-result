@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": null,
-      "votes": 0
+      "votes": 1177
     },
     {
       "number": 1,
@@ -307,7 +307,7 @@
   "_validation": {
     "vote_sum": 79657,
     "good_votes": 79695,
-    "sum_diff_pct": 0.05
+    "sum_diff_pct": 0.0
   },
   "province_code": "44",
   "province_name_normalized": "มหาสารคาม",
@@ -316,7 +316,7 @@
     "voters_came": 84946,
     "ballots_received": 123850,
     "ballots_used": 84946,
-    "good_votes": 79657,
+    "good_votes": 79695,
     "invalid_votes": 4101,
     "no_votes": 1150
   },

@@ -20,7 +20,7 @@
     {
       "number": 1,
       "party": "Unknown",
-      "votes": 0
+      "votes": 2239
     },
     {
       "number": 1,
@@ -55,12 +55,12 @@
     {
       "number": 7,
       "party": "พลวัต",
-      "votes": 869
+      "votes": 454
     },
     {
       "number": 8,
       "party": "ประชาธิปไตยใหม่",
-      "votes": 454
+      "votes": 869
     },
     {
       "number": 9,
@@ -260,12 +260,12 @@
     {
       "number": 49,
       "party": "ไทยก้าวใหม่",
-      "votes": 444
+      "votes": 688
     },
     {
       "number": 48,
       "party": "ไทยสร้างไทย",
-      "votes": 688
+      "votes": 444
     },
     {
       "number": 50,
@@ -366,14 +366,14 @@
     {
       "number": 7,
       "party": "พลวัต",
-      "votes": 869,
+      "votes": 454,
       "party_uuid": "bd8d9f14-f757-41fb-8f37-d6128d9d012d",
       "party_code": "7"
     },
     {
       "number": 8,
       "party": "ประชาธิปไตยใหม่",
-      "votes": 454,
+      "votes": 869,
       "party_uuid": "d1964fe3-2dd0-43d5-a190-77fbfaf586b2",
       "party_code": "8"
     },
@@ -653,14 +653,14 @@
     {
       "number": 49,
       "party": "ไทยก้าวใหม่",
-      "votes": 444,
+      "votes": 688,
       "party_uuid": "965b4b93-c01e-4a2b-a987-577f2b99ebb4",
       "party_code": "49"
     },
     {
       "number": 48,
       "party": "ไทยสร้างไทย",
-      "votes": 688,
+      "votes": 444,
       "party_uuid": "cb1b6cf2-41fa-49b1-a060-01acf13edc81",
       "party_code": "48"
     },

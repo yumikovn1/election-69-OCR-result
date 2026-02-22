@@ -60,7 +60,7 @@
     {
       "number": 9,
       "party": "เพื่อไทย",
-      "votes": 17579
+      "votes": 17479
     },
     {
       "number": 10,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/69. สุรินทร์ เขต 3.json",
   "_validation": {
-    "vote_sum": 78937,
+    "vote_sum": 78837,
     "good_votes": 78837,
-    "sum_diff_pct": 0.13
+    "sum_diff_pct": 0.0
   },
   "province_code": "32",
   "province_name_normalized": "สุรินทร์",
@@ -316,7 +316,7 @@
     "voters_came": 84654,
     "ballots_received": 139801,
     "ballots_used": 84654,
-    "good_votes": 78937,
+    "good_votes": 78837,
     "invalid_votes": 4074,
     "no_votes": 1743
   },
@@ -380,7 +380,7 @@
     {
       "number": 9,
       "party": "เพื่อไทย",
-      "votes": 17579,
+      "votes": 17479,
       "party_uuid": "2d8a1c84-0bc8-4377-965d-c020a0097c27",
       "party_code": "9"
     },

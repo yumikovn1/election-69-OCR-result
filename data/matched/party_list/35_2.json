@@ -302,7 +302,7 @@
   "_validation": {
     "vote_sum": 89109,
     "good_votes": 89211,
-    "sum_diff_pct": 0.11
+    "sum_diff_pct": 0.1
   },
   "province_code": "35",
   "province_name_normalized": "ยโสธร",
@@ -311,7 +311,7 @@
     "voters_came": 94115,
     "ballots_received": 139280,
     "ballots_used": 94115,
-    "good_votes": 89109,
+    "good_votes": 89211,
     "invalid_votes": 3614,
     "no_votes": 1290
   },
