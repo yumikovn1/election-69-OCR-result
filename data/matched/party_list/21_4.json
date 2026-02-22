@@ -19,11 +19,6 @@
   "results": [
     {
       "number": 1,
-      "party": "พรรคที่ 1 (ไม่ระบุชื่อ)",
-      "votes": 0
-    },
-    {
-      "number": 1,
       "party": "ไทยทรัพย์ทวี",
       "votes": 473
     },
@@ -183,6 +178,11 @@
       "votes": 136
     },
     {
+      "number": 33,
+      "party": "ประชาชาติ",
+      "votes": 112
+    },
+    {
       "number": 34,
       "party": "สร้างอนาคตไทย",
       "votes": 86
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/50. ระยอง เขต 4.json",
   "_validation": {
-    "vote_sum": 88350,
+    "vote_sum": 88462,
     "good_votes": 88462,
-    "sum_diff_pct": 0.1
+    "sum_diff_pct": 0.0
   },
   "province_code": "21",
   "province_name_normalized": "ระยอง",
@@ -544,6 +544,13 @@
       "votes": 136,
       "party_uuid": "228ae2e0-33d2-4c85-bef3-419928db45cc",
       "party_code": "32"
+    },
+    {
+      "number": 33,
+      "party": "ประชาชาติ",
+      "votes": 112,
+      "party_uuid": "7f4755ca-ea3a-4023-869d-9cabba328db0",
+      "party_code": "33"
     },
     {
       "number": 34,

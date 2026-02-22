@@ -33,6 +33,11 @@
       "votes": 1940
     },
     {
+      "number": 4,
+      "party": "มิติใหม่",
+      "votes": 102
+    },
+    {
       "number": 5,
       "party": "รวมใจไทย",
       "votes": 564
@@ -300,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/46. ยโสธร เขต 2.json",
   "_validation": {
-    "vote_sum": 89109,
+    "vote_sum": 89211,
     "good_votes": 89211,
-    "sum_diff_pct": 0.1
+    "sum_diff_pct": 0.0
   },
   "province_code": "35",
   "province_name_normalized": "ยโสธร",
@@ -336,6 +341,13 @@
       "votes": 1940,
       "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
       "party_code": "3"
+    },
+    {
+      "number": 4,
+      "party": "มิติใหม่",
+      "votes": 102,
+      "party_uuid": "6102915f-e8bc-4149-8265-ec74489adf2f",
+      "party_code": "4"
     },
     {
       "number": 5,

@@ -165,7 +165,7 @@
     {
       "number": 28,
       "party": "ไทยก้าวหน้า",
-      "votes": 161
+      "votes": 160
     },
     {
       "number": 29,
@@ -315,7 +315,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/31. ปราจีนบุรี เขต 1.json",
   "_validation": {
-    "vote_sum": 84900,
+    "vote_sum": 84899,
     "good_votes": 84899,
     "sum_diff_pct": 0.0
   },
@@ -502,7 +502,7 @@
     {
       "number": 28,
       "party": "ไทยก้าวหน้า",
-      "votes": 161,
+      "votes": 160,
       "party_uuid": "3caedce0-9faa-47a0-8afc-d5f4fff86578",
       "party_code": "28"
     },

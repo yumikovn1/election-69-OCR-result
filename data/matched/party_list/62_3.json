@@ -19,23 +19,18 @@
   "results": [
     {
       "number": 1,
-      "party": "",
-      "votes": 0
-    },
-    {
-      "number": 1,
       "party": "ไทยทรัพย์ทวี",
       "votes": 420
     },
     {
       "number": 2,
       "party": "เพื่อชาติไทย",
-      "votes": 420
+      "votes": 1309
     },
     {
       "number": 3,
       "party": "ใหม่",
-      "votes": 1309
+      "votes": 612
     },
     {
       "number": 4,
@@ -301,13 +296,18 @@
       "number": 56,
       "party": "เพื่อบ้านเมือง",
       "votes": 104
+    },
+    {
+      "number": 57,
+      "party": "พลังไทยรักชาติ",
+      "votes": 75
     }
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/5. กำแพงเพชร เขต 3.json",
   "_validation": {
-    "vote_sum": 81665,
+    "vote_sum": 81932,
     "good_votes": 81932,
-    "sum_diff_pct": 0.3
+    "sum_diff_pct": 0.0
   },
   "province_code": "62",
   "province_name_normalized": "กำแพงเพชร",
@@ -331,14 +331,14 @@
     {
       "number": 2,
       "party": "เพื่อชาติไทย",
-      "votes": 420,
+      "votes": 1309,
       "party_uuid": "0db115a9-bb11-4fc0-9008-4acee3614999",
       "party_code": "2"
     },
     {
       "number": 3,
       "party": "ใหม่",
-      "votes": 1309,
+      "votes": 612,
       "party_uuid": "3d55d7c9-f0bc-4803-b40e-090a7ea5d872",
       "party_code": "3"
     },
@@ -712,6 +712,13 @@
       "votes": 104,
       "party_uuid": "7255d2d0-1f49-4fd8-adad-7acfea2d5126",
       "party_code": "56"
+    },
+    {
+      "number": 57,
+      "party": "พลังไทยรักชาติ",
+      "votes": 75,
+      "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
+      "party_code": "57"
     }
   ],
   "unmatched_parties": []

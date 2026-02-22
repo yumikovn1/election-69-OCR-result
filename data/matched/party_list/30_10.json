@@ -48,9 +48,14 @@
       "votes": 1803
     },
     {
+      "number": 7,
+      "party": "พลังชาติ",
+      "votes": 1963
+    },
+    {
       "number": 8,
       "party": "ประชาธิปไตยใหม่",
-      "votes": 1963
+      "votes": 677
     },
     {
       "number": 9,
@@ -99,7 +104,7 @@
     },
     {
       "number": 18,
-      "party": "หลังสังคมใหม่",
+      "party": "พลังสังคมใหม่",
       "votes": 43
     },
     {
@@ -128,7 +133,7 @@
       "votes": 60
     },
     {
-      "number": 23,
+      "number": 24,
       "party": "วิชชันใหม่",
       "votes": 65
     },
@@ -300,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/21. นครราชสีมา เขต 10.json",
   "_validation": {
-    "vote_sum": 100890,
+    "vote_sum": 101567,
     "good_votes": 101587,
-    "sum_diff_pct": 0.7
+    "sum_diff_pct": 0.02
   },
   "province_code": "30",
   "province_name_normalized": "นครราชสีมา",
@@ -311,7 +316,7 @@
     "voters_came": 112031,
     "ballots_received": 141885,
     "ballots_used": 112031,
-    "good_votes": 101587,
+    "good_votes": 101567,
     "invalid_votes": 6762,
     "no_votes": 3682
   },
@@ -359,9 +364,16 @@
       "party_code": "6"
     },
     {
+      "number": 7,
+      "party": "พลังไทยรักชาติ",
+      "votes": 1963,
+      "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
+      "party_code": "57"
+    },
+    {
       "number": 8,
       "party": "ประชาธิปไตยใหม่",
-      "votes": 1963,
+      "votes": 677,
       "party_uuid": "d1964fe3-2dd0-43d5-a190-77fbfaf586b2",
       "party_code": "8"
     },
@@ -430,7 +442,7 @@
     },
     {
       "number": 18,
-      "party": "หลังสังคมใหม่",
+      "party": "พลังสังคมใหม่",
       "votes": 43,
       "party_uuid": "43053588-eac7-4f7a-9dcd-dba51eeceaed",
       "party_code": "18"
@@ -469,6 +481,13 @@
       "votes": 60,
       "party_uuid": "339fa187-133c-4766-a6c2-36d1b32cda8f",
       "party_code": "23"
+    },
+    {
+      "number": 24,
+      "party": "วิชชั่นใหม่",
+      "votes": 65,
+      "party_uuid": "c126e4e4-be85-44e6-bf3e-f9331b9f91a9",
+      "party_code": "24"
     },
     {
       "number": 25,
@@ -700,13 +719,6 @@
       "votes": 120,
       "party_uuid": "3e7b1adf-ab5f-4206-ba04-6cff9bf02f9c",
       "party_code": "57"
-    },
-    {
-      "number": 24,
-      "party": "วิชชั่นใหม่",
-      "votes": 65,
-      "party_uuid": "c126e4e4-be85-44e6-bf3e-f9331b9f91a9",
-      "party_code": "24"
     }
   ],
   "unmatched_parties": []

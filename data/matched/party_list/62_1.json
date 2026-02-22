@@ -7,7 +7,7 @@
     "1.2": 101442,
     "2.1": 146632,
     "2.2": 101439,
-    "2.3": 45193,
+    "2.3": 45191,
     "3.1": 95025,
     "3.2": 0,
     "3.3": 6144,
@@ -305,7 +305,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/5. กำแพงเพชร เขต 1.json",
   "_validation": {
-    "vote_sum": 91264,
+    "vote_sum": 91164,
     "good_votes": 91168,
     "sum_diff_pct": 0.1
   },
@@ -316,7 +316,7 @@
     "voters_came": 101442,
     "ballots_received": 146632,
     "ballots_used": 101439,
-    "good_votes": 91168,
+    "good_votes": 91164,
     "invalid_votes": 6367,
     "no_votes": 3907
   },
@@ -590,7 +590,7 @@
     {
       "number": 38,
       "party": "พลังธรรมใหม่",
-      "votes": 249,
+      "votes": 149,
       "party_uuid": "2b1669bf-b61b-40b2-96a4-b235fa1e1501",
       "party_code": "38"
     },

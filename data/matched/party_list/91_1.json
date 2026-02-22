@@ -150,7 +150,7 @@
     {
       "number": 27,
       "party": "ประชาธิปัตย์",
-      "votes": 25287
+      "votes": 25286
     },
     {
       "number": 28,
@@ -305,7 +305,7 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/59. สตูล เขต 1.json",
   "_validation": {
-    "vote_sum": 81812,
+    "vote_sum": 81811,
     "good_votes": 81811,
     "sum_diff_pct": 0.0
   },
@@ -506,7 +506,7 @@
     {
       "number": 27,
       "party": "ประชาธิปัตย์",
-      "votes": 25287,
+      "votes": 25286,
       "party_uuid": "d7155f6d-736d-42c0-8bc0-00ee6e1970dc",
       "party_code": "27"
     },

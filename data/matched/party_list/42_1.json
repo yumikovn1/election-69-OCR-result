@@ -60,7 +60,7 @@
     {
       "number": 9,
       "party": "เพื่อไทย",
-      "votes": 24641
+      "votes": 28641
     },
     {
       "number": 10,
@@ -305,9 +305,9 @@
   ],
   "_source_file": "/Users/killernay/Desktop/ERS2026/data/ocr-output-gemini/party_list/55. เลย เขต 1.json",
   "_validation": {
-    "vote_sum": 82344,
+    "vote_sum": 86344,
     "good_votes": 86344,
-    "sum_diff_pct": 4.6
+    "sum_diff_pct": 0.0
   },
   "province_code": "42",
   "province_name_normalized": "เลย",
@@ -315,7 +315,7 @@
     "eligible_voters": 125704,
     "voters_came": 93879,
     "ballots_received": 124100,
-    "ballots_used": 93879,
+    "ballots_used": 93880,
     "good_votes": 86344,
     "invalid_votes": 4372,
     "no_votes": 3164
@@ -380,7 +380,7 @@
     {
       "number": 9,
       "party": "เพื่อไทย",
-      "votes": 24641,
+      "votes": 28641,
       "party_uuid": "2d8a1c84-0bc8-4377-965d-c020a0097c27",
       "party_code": "9"
     },
